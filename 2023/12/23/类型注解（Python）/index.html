@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-12-22
+                    2023-12-23
                 </div>
                 
 
@@ -464,38 +464,44 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="魔术方法（Python）"><a href="#魔术方法（Python）" class="headerlink" title="魔术方法（Python）"></a>魔术方法（Python）</h1><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>_ _init_ _</td>
-<td>构造方法，可用于创建类对象的时候设置初始化行为</td>
-</tr>
-<tr>
-<td>_ _str_ _</td>
-<td>用于实现类对象转字符串的行为</td>
-</tr>
-<tr>
-<td>_ _It_ _</td>
-<td>用于2个类对象进行小于或大于比较</td>
-</tr>
-<tr>
-<td>_ _le_ _</td>
-<td>用于2个类对象进行小于等于或大于等于比较</td>
-</tr>
-<tr>
-<td>_ _eq_ _</td>
-<td>用于2个类对象进行相等比较</td>
-</tr>
-</tbody></table>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用it，Ie方法时一般使用小于及小于等于形式，如果使用大于大于等于形式将得到相反的结果，反例如下：</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__lt__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt; other.age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__le__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt;= other.age</span><br><span class="line">stu1 = Student(<span class="string">&quot;林俊杰&quot;</span>, <span class="number">30</span>)</span><br><span class="line">stu2 = Student(<span class="string">&#x27;苟富贵&#x27;</span>, <span class="number">31</span>)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt;= stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt;= stu2)</span><br><span class="line"><span class="comment">#结果为：</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                <h1 id="类型注解（Python）"><a href="#类型注解（Python）" class="headerlink" title="类型注解（Python）"></a>类型注解（Python）</h1><h2 id="1-什么是类型注解，有什么作用"><a href="#1-什么是类型注解，有什么作用" class="headerlink" title="1.什么是类型注解，有什么作用?"></a>1.什么是类型注解，有什么作用?</h2><p>在代码中涉及数据交互之时，对数据类型进行显式的说明，可以帮助：</p>
+<ul>
+<li><p>PyCharm等开发工具对代码做类型推断协助做代码提示</p>
+</li>
+<li><p>开发者自身做类型的备注</p>
+</li>
+</ul>
+<h2 id="2-类型注解支持："><a href="#2-类型注解支持：" class="headerlink" title="2.类型注解支持："></a>2.类型注解支持：</h2><ul>
+<li><p>变量的类型注解</p>
+</li>
+<li><p>函数(方法) 的形参和返回值的类型注解</p>
+</li>
+</ul>
+<h2 id="3-变量的类型注解语法"><a href="#3-变量的类型注解语法" class="headerlink" title="3.变量的类型注解语法"></a>3.变量的类型注解语法</h2><ul>
+<li><p>语法1： 变量：类型</p>
+</li>
+<li><p>语法2: 在注释中, # type:类型</p>
+</li>
+</ul>
+<h2 id="4-注意事项"><a href="#4-注意事项" class="headerlink" title="4.注意事项"></a>4.注意事项</h2><ul>
+<li>类型注解只是提示性的，并非决定性的。数据类型和注解类型无法对应也不会导致错误</li>
+</ul>
+<h2 id="1-函数-方法-可以为哪里添加注解"><a href="#1-函数-方法-可以为哪里添加注解" class="headerlink" title="1.函数(方法) 可以为哪里添加注解?"></a>1.函数(方法) 可以为哪里添加注解?</h2><ul>
+<li><p>形参的类型注解</p>
+</li>
+<li><p>返回值的类型注解</p>
+</li>
+</ul>
+<h2 id="2-函数-方法-的类型注解语法"><a href="#2-函数-方法-的类型注解语法" class="headerlink" title="2.函数(方法) 的类型注解语法?"></a>2.函数(方法) 的类型注解语法?</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">函数方法名</span>(<span class="params">形参：类型， …形参： 类型</span>) -&gt; 返回值类型：</span><br><span class="line">	<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 
-
-
+<p>注意， 返回值类型注解的符号使用： -&gt;</p>
+<h2 id="1-什么是Union类型"><a href="#1-什么是Union类型" class="headerlink" title="1.什么是Union类型?"></a>1.什么是Union类型?</h2><p>使用Union可以定义联合类型注解</p>
+<h2 id="2-Union的使用方式"><a href="#2-Union的使用方式" class="headerlink" title="2.Union的使用方式"></a>2.Union的使用方式</h2><ul>
+<li><p>导包: from typing import Union</p>
+</li>
+<li><p>使用: Union[类型, ……,类型]</p>
+</li>
+</ul>
 
                 
             </div>
@@ -522,7 +528,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/">https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/</a>
+                    <a href="https://modetou.github.io/2023/12/23/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3%EF%BC%88Python%EF%BC%89/">https://modetou.github.io/2023/12/23/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3%EF%BC%88Python%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -727,9 +733,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/12/23/%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3%EF%BC%88Python%EF%BC%89/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Modetou
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/12/22/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88Python%EF%BC%89/">
                     <div class="card-image">
@@ -747,45 +792,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-22
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Modetou
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/12/19/2023%E5%B9%B412%E6%9C%8811%E6%97%A5-2023%E5%B9%B412%E6%9C%8817%E6%97%A5/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-22
                             </span>
                         <span class="publish-author">
                             
