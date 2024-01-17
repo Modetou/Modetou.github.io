@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-12-22
+                    2024-01-17
                 </div>
                 
 
@@ -464,37 +464,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="魔术方法（Python）"><a href="#魔术方法（Python）" class="headerlink" title="魔术方法（Python）"></a>魔术方法（Python）</h1><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>_ _init_ _</td>
-<td>构造方法，可用于创建类对象的时候设置初始化行为</td>
-</tr>
-<tr>
-<td>_ _str_ _</td>
-<td>用于实现类对象转字符串的行为</td>
-</tr>
-<tr>
-<td>_ _It_ _</td>
-<td>用于2个类对象进行小于或大于比较</td>
-</tr>
-<tr>
-<td>_ _le_ _</td>
-<td>用于2个类对象进行小于等于或大于等于比较</td>
-</tr>
-<tr>
-<td>_ _eq_ _</td>
-<td>用于2个类对象进行相等比较</td>
-</tr>
-</tbody></table>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用it，Ie方法时一般使用小于及小于等于形式，如果使用大于大于等于形式将得到相反的结果，反例如下：</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__lt__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt; other.age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__le__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt;= other.age</span><br><span class="line">stu1 = Student(<span class="string">&quot;林俊杰&quot;</span>, <span class="number">30</span>)</span><br><span class="line">stu2 = Student(<span class="string">&#x27;苟富贵&#x27;</span>, <span class="number">31</span>)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt;= stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt;= stu2)</span><br><span class="line"><span class="comment">#结果为：</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
+                <h2 id="键盘录入"><a href="#键盘录入" class="headerlink" title="键盘录入"></a>键盘录入</h2><p>使用步骤：</p>
+<p>第一步：</p>
+<p>​	导包：其实就是表示先找到Scanner这个类在哪。</p>
+<p>第二步：</p>
+<p>​	创建对象：其实就表示申明一下，我准备开始用Scanner这个类了。</p>
+<p>第三步：</p>
+<p>​	接收数据：也是真正干活的代码。</p>
+<p>代码示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包，其实就是先找到Scanner这个类在哪</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScannerDemo1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="comment">//2.创建对象，其实就是申明一下，我准备开始用Scanner这个类了。</span></span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="comment">//3.接收数据</span></span><br><span class="line">		<span class="comment">//当程序运行之后，我们在键盘输入的数据就会被变量i给接收了</span></span><br><span class="line">		System.out.println(<span class="string">&quot;请输入一个数字&quot;</span>);</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">		System.out.println(i);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
                 
@@ -522,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/">https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/</a>
+                    <a href="https://modetou.github.io/2024/01/17/%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/">https://modetou.github.io/2024/01/17/%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -727,48 +705,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2023/12/22/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88Python%EF%BC%89/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-22
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Modetou
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2023/12/19/2023%E5%B9%B412%E6%9C%8811%E6%97%A5-2023%E5%B9%B412%E6%9C%8817%E6%97%A5/">
+                <a href="/2024/01/17/%E9%94%AE%E7%9B%98%E5%BD%95%E5%85%A5/">
                     <div class="card-image">
                         
                         
@@ -785,7 +727,45 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Modetou
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/12/24/2023%E5%B9%B412%E6%9C%8818%E6%97%A5-2023%E5%B9%B412%E6%9C%8824%E6%97%A5/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-24
                             </span>
                         <span class="publish-author">
                             
