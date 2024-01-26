@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-12-22
+                    2023-12-18
                 </div>
                 
 
@@ -464,35 +464,34 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="魔术方法（Python）"><a href="#魔术方法（Python）" class="headerlink" title="魔术方法（Python）"></a>魔术方法（Python）</h1><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>_ _init_ _</td>
-<td>构造方法，可用于创建类对象的时候设置初始化行为</td>
-</tr>
-<tr>
-<td>_ _str_ _</td>
-<td>用于实现类对象转字符串的行为</td>
-</tr>
-<tr>
-<td>_ _It_ _</td>
-<td>用于2个类对象进行小于或大于比较</td>
-</tr>
-<tr>
-<td>_ _le_ _</td>
-<td>用于2个类对象进行小于等于或大于等于比较</td>
-</tr>
-<tr>
-<td>_ _eq_ _</td>
-<td>用于2个类对象进行相等比较</td>
-</tr>
-</tbody></table>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用it，Ie方法时一般使用小于及小于等于形式，如果使用大于大于等于形式将得到相反的结果，反例如下：</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__lt__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt; other.age</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__le__</span>(<span class="params">self, other</span>):</span><br><span class="line">        <span class="keyword">return</span> self.age &gt;= other.age</span><br><span class="line">stu1 = Student(<span class="string">&quot;林俊杰&quot;</span>, <span class="number">30</span>)</span><br><span class="line">stu2 = Student(<span class="string">&#x27;苟富贵&#x27;</span>, <span class="number">31</span>)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt; stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &gt;= stu2)</span><br><span class="line"><span class="built_in">print</span>(stu1 &lt;= stu2)</span><br><span class="line"><span class="comment">#结果为：</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="comment">#False</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="1-map函数"><a href="#1-map函数" class="headerlink" title="1.map函数"></a>1.map函数</h2><p>可以将一个函数应用于可迭代对象的每个元素，并返回一个包含结果的新的可迭代对象。</p>
+<h3 id="（1）-可批量用函数处理"><a href="#（1）-可批量用函数处理" class="headerlink" title="（1）.可批量用函数处理"></a>（1）.可批量用函数处理</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tempString=<span class="string">&#x27;13557688&#x27;</span></span><br><span class="line"></span><br><span class="line">li=<span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,tempString))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(li)</span><br><span class="line"></span><br><span class="line"><span class="comment">#结果为：[1, 3, 5, 5, 7, 6, 8, 8]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>可将字符串快速转换为整型（需字符串中的元素均为可转换为整型的元素）</p>
+<h3 id="（2）-可批量接收传入数据"><a href="#（2）-可批量接收传入数据" class="headerlink" title="（2）.可批量接收传入数据"></a>（2）.可批量接收传入数据</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a,b,c=<span class="built_in">map</span>(<span class="built_in">float</span>,<span class="built_in">input</span>().split( ))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(a+b&gt;c <span class="keyword">and</span> b+c&gt;a <span class="keyword">and</span> a+c&gt;b)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入：1 1 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：True</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-zip-函数"><a href="#2-zip-函数" class="headerlink" title="2.zip()函数"></a>2.zip()函数</h2><p>用于将多个可迭代对象（例如列表、元组等）中对应位置的元素打包成一个元组，并返回由这些元组组成的迭代器。换句话说，zip()函数可以将多个列表的对应元素进行配对。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">li1 = [<span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">3</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">5</span>, <span class="number">8</span>, <span class="number">4</span>, <span class="number">2</span>]</span><br><span class="line">li2=<span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="string">&#x27;32012419880824005&#x27;</span>))</span><br><span class="line">result = <span class="built_in">sum</span>(a * b <span class="keyword">for</span> a, b <span class="keyword">in</span> <span class="built_in">zip</span>(li2, li1))</span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"><span class="comment">#输出：281</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-gcd方法"><a href="#3-gcd方法" class="headerlink" title="3.gcd方法"></a>3.gcd方法</h2><p>math库中的gcd方法，用于求取两个数的最大公约数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">a,b=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split( ))</span><br><span class="line">maxCommomFactor=math.gcd(a,b)</span><br><span class="line"><span class="built_in">print</span>(maxCommomFactor)</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入：32 64</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：32</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="补充：最小公倍数-两个数的乘积除以最大公约数"><a href="#补充：最小公倍数-两个数的乘积除以最大公约数" class="headerlink" title="补充：最小公倍数&#x3D;两个数的乘积除以最大公约数"></a><strong>补充：最小公倍数&#x3D;两个数的乘积除以最大公约数</strong></h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">a,b=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split( ))</span><br><span class="line">minCommonMultiple=(a*b)/math.gcd(a,b)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(minCommonMultiple))</span><br><span class="line"></span><br><span class="line"><span class="comment">#输入：6 15</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#输出：30</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-判断质数"><a href="#3-判断质数" class="headerlink" title="3.判断质数"></a>3.判断质数</h2><p>当输入数据较大时使用遍历每一个数取余是否为0来判断该数是否为质数时不够快速，可使用如下代码作为优化。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">estimate_prime_number</span>(<span class="params">num</span>):</span><br><span class="line">    <span class="keyword">if</span> num&lt;=<span class="number">1</span>:</span><br><span class="line">    	<span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">	elifnum&lt;=<span class="number">3</span>:</span><br><span class="line">    	<span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">	<span class="keyword">elif</span> num%<span class="number">2</span>==<span class="number">0</span> <span class="keyword">or</span> num%<span class="number">3</span>==<span class="number">0</span>:</span><br><span class="line">    	<span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    bn=<span class="number">5</span></span><br><span class="line">	<span class="keyword">while</span> bn*bn&lt;=num:</span><br><span class="line">    	<span class="keyword">if</span> num%bn==<span class="number">0</span> <span class="keyword">or</span> num%(bn+<span class="number">2</span>)==<span class="number">0</span>:</span><br><span class="line">      	    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    bn+=<span class="number">6</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line"><span class="comment">#当该函数返回1时，则输入的数据为质数，返回0时，则不为质数</span></span><br></pre></td></tr></table></figure>
+
+
 
 
 
@@ -522,7 +521,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/">https://modetou.github.io/2023/12/22/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95%EF%BC%88Python%EF%BC%89/</a>
+                    <a href="https://modetou.github.io/2023/12/18/python/%E5%87%BD%E6%95%B0/">https://modetou.github.io/2023/12/18/python/%E5%87%BD%E6%95%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -731,7 +730,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/12/22/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7%EF%BC%88Python%EF%BC%89/">
+                <a href="/2023/12/19/%E5%91%A8%E6%8A%A5/2023%E5%B9%B412%E6%9C%8811%E6%97%A5-2023%E5%B9%B412%E6%9C%8817%E6%97%A5/">
                     <div class="card-image">
                         
                         
@@ -748,7 +747,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-12-19
                         </span>
                         <span class="publish-author">
                             
@@ -768,7 +767,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/12/19/2023%E5%B9%B412%E6%9C%8811%E6%97%A5-2023%E5%B9%B412%E6%9C%8817%E6%97%A5/">
+                <a href="/2023/12/18/MyFirstBlog/">
                     <div class="card-image">
                         
                         
@@ -785,7 +784,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-12-18
                             </span>
                         <span class="publish-author">
                             
