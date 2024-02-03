@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-01-28
+                    2024-02-04
                 </div>
                 
 
@@ -464,15 +464,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="typora使用手册"><a href="#typora使用手册" class="headerlink" title="typora使用手册"></a>typora使用手册</h1><h2 id="1-代码块"><a href="#1-代码块" class="headerlink" title="1.代码块"></a>1.代码块</h2><p>[&#96;&#96;&#96;]回车，选择语言</p>
-<p>例</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这是java代码</span></span><br></pre></td></tr></table></figure>
+                <h1 id="DFS和n重循环-python"><a href="#DFS和n重循环-python" class="headerlink" title="DFS和n重循环(python)"></a>DFS和n重循环(python)</h1><p>模板</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">depth</span>):</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">:param depth: 当前为第几重循环</span></span><br><span class="line"><span class="string">:return:</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">if</span> depth N:</span><br><span class="line">	<span class="comment">#N重循环最内层执行的代码</span></span><br><span class="line">	<span class="keyword">return</span></span><br><span class="line"><span class="comment">#每重循环进行的枚举选择</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="2-小圆点"><a href="#2-小圆点" class="headerlink" title="2.小圆点"></a>2.小圆点</h2><p>[ctrl+shift+]]</p>
-<p>例</p>
-<p>- </p>
-<p>按下回车下一行自动添加原点，接除该模式须点击下一行最前的空白处</p>
-<h2 id="3-改变字体颜色"><a href="#3-改变字体颜色" class="headerlink" title="3.改变字体颜色"></a>3.改变字体颜色</h2><p>[$\textcolor{color}{点开复制使用}$]</p>
+<p>实例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#DFS：即深度优先算法（Depth First Search）</span></span><br><span class="line"><span class="comment">#规则：</span></span><br><span class="line"><span class="comment"># 拆出的数是正整数</span></span><br><span class="line"><span class="comment"># 路径值不递减（后一项数大于等于前一项数）</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">depth,last_vulue</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    :param depth: 搜索树的深度</span></span><br><span class="line"><span class="string">    :param last_vulue: 上一层的值（保证每一项数据大于等于上一项）（剪枝）</span></span><br><span class="line"><span class="string">    :return: 无返回值，仅起递归终止作用</span></span><br><span class="line"><span class="string">    path 所历经的路径</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> depth ==n:</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">sum</span>(path)!=x:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>.join(<span class="built_in">map</span>(<span class="built_in">str</span>,path)))</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(last_vulue,x+<span class="number">1</span>):</span><br><span class="line">        path[depth]=i</span><br><span class="line">        dfs(depth+<span class="number">1</span>,i)</span><br><span class="line"><span class="comment">#需要拆分的数字</span></span><br><span class="line">x=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="comment">#拆分后数字的个数</span></span><br><span class="line">n=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">path=[<span class="number">0</span>]*n</span><br><span class="line">dfs(<span class="number">0</span>,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
 
                 
             </div>
@@ -499,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2024/01/28/typora%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/">https://modetou.github.io/2024/01/28/typora%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</a>
+                    <a href="https://modetou.github.io/2024/02/04/python/DFS%E5%92%8Cn%E9%87%8D%E5%BE%AA%E7%8E%AF(python)/">https://modetou.github.io/2024/02/04/python/DFS%E5%92%8Cn%E9%87%8D%E5%BE%AA%E7%8E%AF(python)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -708,7 +707,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/01/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B41%E6%9C%8822%E6%97%A5-2024%E5%B9%B41%E6%9C%8828%E6%97%A5/">
+                <a href="/2024/02/04/java/5.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%88java%EF%BC%89/">
                     <div class="card-image">
                         
                         
@@ -725,7 +724,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-01-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-02-04
                         </span>
                         <span class="publish-author">
                             
@@ -745,7 +744,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/01/28/java/4.%E6%96%B9%E6%B3%95%EF%BC%88java%EF%BC%89/">
+                <a href="/2024/01/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B41%E6%9C%8822%E6%97%A5-2024%E5%B9%B41%E6%9C%8828%E6%97%A5/">
                     <div class="card-image">
                         
                         
