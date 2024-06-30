@@ -1,0 +1,1334 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Modetou&#39;s blog">
+    <meta name="description" content="programming study">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Modetou&#39;s blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Modetou&#39;s blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Modetou&#39;s blog</div>
+        <div class="logo-desc">
+            
+            programming study
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-06-16
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="C语言项目——学生管理系统（第一视角分享）"><a href="#C语言项目——学生管理系统（第一视角分享）" class="headerlink" title="C语言项目——学生管理系统（第一视角分享）"></a>C语言项目——学生管理系统（第一视角分享）</h1><p>Q：这篇文章 的特点是什么?</p>
+<p>A：如果你也面对学生管理系统无从下手，请一定看完这篇文章。这篇文章以普通学生的视角以问答的方式解决在学生管理系统中常遇到的问题。这篇文章以完全真实的学生视角面向在系统设计中的种种问题。</p>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><p>Q：学生管理系统需要实现什么功能？</p>
+<p>A：</p>
+<p>基础功能</p>
+<ul>
+<li><p>录入信息</p>
+</li>
+<li><p>删除信息</p>
+</li>
+<li><p>修改信息</p>
+</li>
+<li><p>查找信息</p>
+</li>
+</ul>
+<p>更多功能：</p>
+<ul>
+<li>统计</li>
+<li>排序</li>
+<li>权限验证</li>
+</ul>
+<p>Q：有什么其他要求吗？</p>
+<p>A1：要求动态存取数据</p>
+<p>​	Q：如何实现？</p>
+<p>​	A：构建链表</p>
+<p>A2：要求实现数据的持久化存储</p>
+<p>​	Q：如何实现？</p>
+<p>​	A：使用文件进行存取</p>
+<p>A3：要求采用模块化编程思想</p>
+<p>​	Q：什么是模块化编程思想？</p>
+<p>​	A：模块化编程思想是一种软件设计方法，它强调将一个程序分解为多个小模块，每个			 模块负责完成一个特定的功能</p>
+<p>​	Q：具体需要怎么做？</p>
+<p>​	A：在C语言中通过函数、文件和头文件来实现。将复杂的功能拆分成简单的功能，封装	其内部数据和实现细节，只通过定义良好的接口与外界通信。加强模块内部元素的联系，	减少模块之间的依赖。</p>
+<p>A4：对用户输入进行有效性检查，确保数据的正确性和安全性。</p>
+<p>​	Q：怎么做？</p>
+<p>​	A：当数据有效时再将数据加入链表（或数组），否则提示用户输入无效。</p>
+<h2 id="数据结构设计"><a href="#数据结构设计" class="headerlink" title="数据结构设计"></a>数据结构设计</h2><p>第一步：构建结构体</p>
+<p>Q：为什么要构建结构体？</p>
+<p>A：结构体使数据管理更加集中和系统，使代码更易理解和维护，易于扩展，方便数据处理和内存管理。</p>
+<p>Q：如何构建？</p>
+<p>A：示例如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">typedef struct Student</span><br><span class="line">&#123;</span><br><span class="line">	//学号</span><br><span class="line">	int stu_id;</span><br><span class="line">	//姓名</span><br><span class="line">	char name[20];</span><br><span class="line">	//性别</span><br><span class="line">	char gender[20];</span><br><span class="line">	//英语分数</span><br><span class="line">	int score_English;</span><br><span class="line">	//高数分数</span><br><span class="line">	int score_Math;</span><br><span class="line">	//计算机分数</span><br><span class="line">	int score_Computer;</span><br><span class="line">&#125;Student;</span><br></pre></td></tr></table></figure>
+
+<p>第二步：构建链表</p>
+<p>Q：为什么要构建链表？</p>
+<p>A：在C语言中，静态数组的大小必须在定义时就确定，并且一旦确定后不能再次扩张或缩减。虽然可以使用动态内存分配（如malloc和realloc）来创建可变大小的数组，但这需要手动管理内存并可能涉及到数据的重新复制。链表可以弥补这一点，它允许内存根据数据的增减动态变化，从而避免内存浪费和减少内存溢出的风险。</p>
+<p>Q：如何构建链表？</p>
+<p>A：</p>
+<p>新建Node.h文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _NODE_H_</span><br><span class="line">#define _NODE_H_</span><br><span class="line">//主要内容</span><br><span class="line">#endif // !_NODE_H_</span><br></pre></td></tr></table></figure>
+
+<p>编写主要内容</p>
+<p>第一步：定义节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//定义节点</span><br><span class="line">typedef struct Node</span><br><span class="line">&#123;</span><br><span class="line">	Data data;         //数据域</span><br><span class="line">	struct Node* next;//指针域</span><br><span class="line">&#125;Node;</span><br></pre></td></tr></table></figure>
+
+<p>第二步：增加别名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//在上述的学生结构体中增加别名Data</span><br></pre></td></tr></table></figure>
+
+<p>Q：为什么要这么做而不将数据域的数据类型直接定义为Student？</p>
+<p>A：增加可读性，便于理解。</p>
+<p>第三步：设计链表</p>
+<p>新建List.h文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _LIST_H_</span><br><span class="line">#define _LIST_H_</span><br><span class="line">#include &quot;Node.h&quot;     //以Node为节点构建链表</span><br><span class="line">#include &lt;malloc.h&gt;   //动态分配内存</span><br><span class="line">//主要内容</span><br><span class="line">#endif // !_LIST_H_   </span><br></pre></td></tr></table></figure>
+
+<p>编写主要内容</p>
+<p>第一步：定义链表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//链表结构</span><br><span class="line">typedef struct List</span><br><span class="line">&#123;</span><br><span class="line">	size_t size;   //链表的长度</span><br><span class="line">	Node* front;   //头指针</span><br><span class="line">	Node* tail;    //尾指针</span><br><span class="line">&#125;List;</span><br></pre></td></tr></table></figure>
+
+<h2 id="功能设计"><a href="#功能设计" class="headerlink" title="功能设计"></a>功能设计</h2><p>第一步：进入List.h</p>
+<p>第二步：声明函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//创建链表</span><br><span class="line">List* createList();</span><br><span class="line">//摧毁链表</span><br><span class="line">void destoryList(List* list);</span><br><span class="line">//插入数据</span><br><span class="line">void push_back(List* list, Data val);</span><br><span class="line">//删除数据</span><br><span class="line">typedef bool (*CMP)(Data*,Data*);</span><br><span class="line">void remove_if(List* list, CMP cmp, Data* val);</span><br><span class="line">//遍历链表</span><br><span class="line">typedef void (*DoSomething)(Data*);</span><br><span class="line">void for_each(List* list, DoSomething dos);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第三步：实现函数</p>
+<p>新建List.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;List.h&quot;</span><br><span class="line"></span><br><span class="line">// 创建并初始化一个新的链表</span><br><span class="line">List* createList()</span><br><span class="line">&#123;</span><br><span class="line">    // 为整个链表结构体动态分配内存</span><br><span class="line">    List* list = (List*)calloc(1, sizeof(List));</span><br><span class="line">    // 检查内存是否成功分配</span><br><span class="line">    if (!list)</span><br><span class="line">    &#123;</span><br><span class="line">        return NULL; // 若分配失败，返回NULL</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 为链表的头尾节点动态分配内存</span><br><span class="line">    list-&gt;front = list-&gt;tail = (Node*)calloc(1, sizeof(Node));</span><br><span class="line">    // 检查头节点内存是否成功分配</span><br><span class="line">    if (!list-&gt;front)</span><br><span class="line">    &#123;</span><br><span class="line">        free(list); // 分配失败，释放已分配的链表内存</span><br><span class="line">        return NULL; // 返回NULL</span><br><span class="line">    &#125;</span><br><span class="line">    return list; // 返回新创建的链表</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 向链表末尾添加一个元素</span><br><span class="line">void push_back(List* list, Data val)</span><br><span class="line">&#123;</span><br><span class="line">    // 为新节点动态分配内存</span><br><span class="line">    Node* newNode = (Node*)calloc(1, sizeof(Node));</span><br><span class="line">    // 检查内存是否成功分配</span><br><span class="line">    if (!newNode)</span><br><span class="line">    &#123;</span><br><span class="line">        return; // 分配失败则直接返回</span><br><span class="line">    &#125;</span><br><span class="line">    newNode-&gt;data = val; // 设置新节点的数据</span><br><span class="line">    // 将新节点插入链表尾部</span><br><span class="line">    list-&gt;tail-&gt;next = newNode;</span><br><span class="line">    list-&gt;tail = newNode; // 更新链表的尾指针</span><br><span class="line">    list-&gt;size++; // 链表大小增加</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 销毁链表，释放所有节点的内存</span><br><span class="line">void destoryList(List* list)</span><br><span class="line">&#123;</span><br><span class="line">    Node* temp;</span><br><span class="line">    Node* node = list-&gt;front;</span><br><span class="line">    // 遍历链表并释放每个节点</span><br><span class="line">    while (node != NULL)</span><br><span class="line">    &#123;</span><br><span class="line">        temp = node;       // 存储当前节点的地址</span><br><span class="line">        node = node-&gt;next; // 移动到下一个节点</span><br><span class="line">        free(temp);        // 释放当前节点</span><br><span class="line">    &#125;</span><br><span class="line">    free(list); // 最后释放链表的结构体内存</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 对链表中的每个元素执行特定操作</span><br><span class="line">void for_each(List* list, DoSomething dos)</span><br><span class="line">&#123;</span><br><span class="line">    Node* curNode = list-&gt;front-&gt;next; // 从头节点的下一节点开始</span><br><span class="line">    // 遍历链表</span><br><span class="line">    while (curNode)</span><br><span class="line">    &#123;</span><br><span class="line">        dos(&amp;curNode-&gt;data); // 对当前节点的数据执行指定操作</span><br><span class="line">        curNode = curNode-&gt;next; // 移动到下一个节点</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>第四步：进入Node.h文件</p>
+<p>第五步：声明函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//输出学生信息</span><br><span class="line">void stu_print(Student* stu);</span><br><span class="line">//通过学生id删除学生信息</span><br><span class="line">int deleteDataByStu_id(Node* headNode, int posData);</span><br><span class="line">//通过学生id查找学生信息</span><br><span class="line">Node* searchDataByStu_id(struct Node* headNode, int posData);</span><br><span class="line">//统计学生数量</span><br><span class="line">int count(Node* headNode);</span><br><span class="line">//定义选择成员的函数指针</span><br><span class="line">typedef int* (*MemberSelector)(struct Node*);</span><br><span class="line">// 用于返回指向 英语 的指针</span><br><span class="line">int* selectEnglish(struct Node* node);</span><br><span class="line">// 用于返回指向 高数 的指针</span><br><span class="line">int* selectMath(struct Node* node);</span><br><span class="line">// 用于返回指向 计算机 的指针</span><br><span class="line">int* selectComputer(struct Node* node);</span><br><span class="line">//通过成绩排序</span><br><span class="line">void sortToGrade(Node* headNode, MemberSelector selector);</span><br><span class="line">//统计总成绩并排序</span><br><span class="line">void totalSortToGrade(Node* headNode);</span><br><span class="line">//判断非空</span><br><span class="line">bool isNULL(Node* headNode);</span><br></pre></td></tr></table></figure>
+
+<p>第六步：实现函数</p>
+<p>新建Node.cpp文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;Node.h&quot;</span><br><span class="line">void stu_print(Student* stu)</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d\n&quot;, stu-&gt;stu_id, stu-&gt;name, stu-&gt;gender, stu-&gt;score_English, stu-&gt;score_Math, stu-&gt;score_Computer);</span><br><span class="line">&#125;</span><br><span class="line">int deleteDataByStu_id(Node* headNode, int posData)</span><br><span class="line">&#123;</span><br><span class="line">	Node* preNode = headNode;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	while (curNode != NULL &amp;&amp; curNode-&gt;data.stu_id != posData)</span><br><span class="line">	&#123;</span><br><span class="line">		preNode = curNode;</span><br><span class="line">		curNode = preNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	if (curNode == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		return 1;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		preNode-&gt;next = curNode-&gt;next;</span><br><span class="line">		free(curNode);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Node* searchDataByStu_id(struct Node* headNode, int posData)</span><br><span class="line">&#123;</span><br><span class="line">	Node* pmove = headNode-&gt;next;</span><br><span class="line">	while (pmove != NULL &amp;&amp; pmove-&gt;data.stu_id != posData)</span><br><span class="line">	&#123;</span><br><span class="line">		pmove = pmove-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	return pmove;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int count(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	int n = 0;</span><br><span class="line">	Node* preNode = headNode;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	while (curNode != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		preNode = curNode;</span><br><span class="line">		curNode = preNode-&gt;next;</span><br><span class="line">		n++;</span><br><span class="line">	&#125;</span><br><span class="line">	return n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int* selectEnglish(struct Node* node)</span><br><span class="line">&#123;</span><br><span class="line">	return &amp;node-&gt;data.score_English;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int* selectMath(struct Node* node) &#123;</span><br><span class="line">	return &amp;node-&gt;data.score_Math;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int* selectComputer(struct Node* node) &#123;</span><br><span class="line">	return &amp;node-&gt;data.score_Computer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void sortToGrade(Node* headNode, MemberSelector selector)</span><br><span class="line">&#123;</span><br><span class="line">	int n = count(headNode);</span><br><span class="line">	int score[MAX_LIMIT] = &#123; 0 &#125;;</span><br><span class="line">	Node* nodeLi[MAX_LIMIT] = &#123; NULL &#125;;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		score[i] = *selector(curNode);</span><br><span class="line">		nodeLi[i] = curNode;</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j = n - 1; j &gt; i; j--)</span><br><span class="line">		&#123;</span><br><span class="line">			int t = 0;</span><br><span class="line">			Node* temp = NULL;</span><br><span class="line">			if (score[j - 1] &lt; score[j])</span><br><span class="line">			&#123;</span><br><span class="line">				t = score[j - 1];</span><br><span class="line">				score[j - 1] = score[j];</span><br><span class="line">				score[j] = t;</span><br><span class="line">				temp = nodeLi[j - 1];</span><br><span class="line">				nodeLi[j - 1] = nodeLi[j];</span><br><span class="line">				nodeLi[j] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	int i = 0;</span><br><span class="line">	while (&amp;nodeLi[i]-&gt;data != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d\n&quot;, nodeLi[i]-&gt;data.stu_id, nodeLi[i]-&gt;data.name, nodeLi[i]-&gt;data.gender, nodeLi[i]-&gt;data.score_English, nodeLi[i]-&gt;data.score_Math, nodeLi[i]-&gt;data.score_Computer);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void totalSortToGrade(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	int n = count(headNode);</span><br><span class="line">	int score[MAX_LIMIT] = &#123; 0 &#125;;</span><br><span class="line">	Node* nodeLi[MAX_LIMIT] = &#123; NULL &#125;;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		score[i] = curNode-&gt;data.score_English + curNode-&gt;data.score_Math + curNode-&gt;data.score_Computer;</span><br><span class="line">		nodeLi[i] = curNode;</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j = n - 1; j &gt; i; j--)</span><br><span class="line">		&#123;</span><br><span class="line">			int t = 0;</span><br><span class="line">			Node* temp = NULL;</span><br><span class="line">			if (score[j - 1] &lt; score[j])</span><br><span class="line">			&#123;</span><br><span class="line">				t = score[j - 1];</span><br><span class="line">				score[j - 1] = score[j];</span><br><span class="line">				score[j] = t;</span><br><span class="line">				temp = nodeLi[j - 1];</span><br><span class="line">				nodeLi[j - 1] = nodeLi[j];</span><br><span class="line">				nodeLi[j] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	int i = 0;</span><br><span class="line">	while (&amp;nodeLi[i]-&gt;data != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d 总分：%d\n&quot;, nodeLi[i]-&gt;data.stu_id, nodeLi[i]-&gt;data.name, nodeLi[i]-&gt;data.gender, nodeLi[i]-&gt;data.score_English, nodeLi[i]-&gt;data.score_Math, nodeLi[i]-&gt;data.score_Computer, score[i]);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">bool isNULL(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	if (!curNode)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;系统中暂无数据，请先导入数据\n&quot;);</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line">	return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="界面显示及函数调用"><a href="#界面显示及函数调用" class="headerlink" title="界面显示及函数调用"></a>界面显示及函数调用</h2><p>第一步：导入自定义头文件及所需的官方头文件</p>
+<p>新建main.cpp文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">#include &quot;List.h&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第二步：定义功能函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//主菜单</span><br><span class="line">int mainMenu();</span><br><span class="line">//显示</span><br><span class="line">void showAllitem();</span><br><span class="line">//增加</span><br><span class="line">int additem();</span><br><span class="line">//搜索</span><br><span class="line">void searchitem();</span><br><span class="line">//删除</span><br><span class="line">void delitem();</span><br><span class="line">//统计</span><br><span class="line">void statisticitem();</span><br><span class="line">//排序</span><br><span class="line">void sortitem();</span><br><span class="line">//修改</span><br><span class="line">void alteritem();</span><br></pre></td></tr></table></figure>
+
+<p>第三步：界面设计</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">int mainMenu()</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;**********学生管理系统**********\n&quot;);</span><br><span class="line">	printf(&quot;*      0.保存信息并退出        *\n&quot;);</span><br><span class="line">	printf(&quot;*      1.显示学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      2.新增学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      3.搜索学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      4.删除学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      5.统计学生性别信息      *\n&quot;);</span><br><span class="line">	printf(&quot;*      6.按成绩排序            *\n&quot;);</span><br><span class="line">	printf(&quot;*      7.修改学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;********************************\n&quot;);</span><br><span class="line">	printf(&quot;请输入选项（0 - 7）：&quot;);</span><br><span class="line">	int op;</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;op);</span><br><span class="line">	return op;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第四步：主函数设计</p>
+<p>第一步：应在主函数开始时创建链表，主函数结束时销毁链表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	glist = createList();</span><br><span class="line">	//主要内容</span><br><span class="line">	destoryList(glist);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第二步：通过用户输入调用功能</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	bool isDone = false;   //退出变量</span><br><span class="line">		while (!isDone)</span><br><span class="line">	&#123;</span><br><span class="line">		switch (mainMenu())</span><br><span class="line">		&#123;</span><br><span class="line">			case 0:</span><br><span class="line">				isDone = true;</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				//显示学生信息</span><br><span class="line">				showAllitem();</span><br><span class="line">				break;</span><br><span class="line">			case 2:</span><br><span class="line">				//新增学生信息</span><br><span class="line">				additem();</span><br><span class="line">				break;</span><br><span class="line">			case 3:</span><br><span class="line">				//搜索学生信息 </span><br><span class="line">                searchitem();</span><br><span class="line">				break;</span><br><span class="line">			case 4:</span><br><span class="line">				//删除学生信息</span><br><span class="line">				delitem();</span><br><span class="line">				break;</span><br><span class="line">			case 5:</span><br><span class="line">				//统计学生性别信息</span><br><span class="line">				statisticitem();</span><br><span class="line">				break;</span><br><span class="line">			case 6:</span><br><span class="line">				//按成绩排序</span><br><span class="line">				sortitem();</span><br><span class="line">				break;</span><br><span class="line">			case 7:</span><br><span class="line">				//修改学生信息</span><br><span class="line">				alteritem();</span><br><span class="line">				break;</span><br><span class="line">			default:</span><br><span class="line">				printf(&quot;非法输入，请输入选项（0 - 7）\n&quot;);</span><br><span class="line">				break;</span><br><span class="line">		&#125;</span><br><span class="line">		//清屏</span><br><span class="line">		system(&quot;pause&quot;);</span><br><span class="line">		system(&quot;cls&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第五步：实现功能函数</p>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><p>该代码实现了拥有权限登录，权限验证，根据权限等级开放功能的学生管理系统。</p>
+<p>Node.h</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _NODE_H_</span><br><span class="line">#define _NODE_H_</span><br><span class="line">#define MAX_LIMIT 100 </span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;malloc.h&gt;</span><br><span class="line">////定义日期结构</span><br><span class="line">//typedef struct Date</span><br><span class="line">//&#123;</span><br><span class="line">//	int year;</span><br><span class="line">//	int month;</span><br><span class="line">//	int day;</span><br><span class="line">//&#125;Date;</span><br><span class="line">//定义学生结构</span><br><span class="line">typedef struct Student</span><br><span class="line">&#123;</span><br><span class="line">	//学号</span><br><span class="line">	int stu_id;</span><br><span class="line">	//姓名</span><br><span class="line">	char name[20];</span><br><span class="line">	//性别</span><br><span class="line">	char gender[20];</span><br><span class="line">	//英语分数</span><br><span class="line">	int score_English;</span><br><span class="line">	//高数分数</span><br><span class="line">	int score_Math;</span><br><span class="line">	//计算机分数</span><br><span class="line">	int score_Computer;</span><br><span class="line">	//密码</span><br><span class="line">	char password[20];</span><br><span class="line">	//等级</span><br><span class="line">	int grade;</span><br><span class="line">&#125;Student,Data;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//抽象数据类型</span><br><span class="line">//typedef int Data;</span><br><span class="line"></span><br><span class="line">//定义节点</span><br><span class="line">typedef struct Node</span><br><span class="line">&#123;</span><br><span class="line">	Data data;         //数据域</span><br><span class="line">	struct Node* next;//指针域</span><br><span class="line">&#125;Node;</span><br><span class="line"></span><br><span class="line">//输出学生信息</span><br><span class="line">void stu_print(Student* stu);</span><br><span class="line">//通过学生id删除学生信息</span><br><span class="line">int deleteDataByStu_id(Node* headNode, int posData);</span><br><span class="line">//通过学生id查找学生信息</span><br><span class="line">Node* searchDataByStu_id(struct Node* headNode, int posData);</span><br><span class="line">//统计学生数量</span><br><span class="line">int count(Node* headNode);</span><br><span class="line">//定义选择成员的函数指针</span><br><span class="line">typedef int* (*MemberSelector)(struct Node*);</span><br><span class="line">// 用于返回指向 英语 的指针</span><br><span class="line">int* selectEnglish(struct Node* node);</span><br><span class="line">// 用于返回指向 高数 的指针</span><br><span class="line">int* selectMath(struct Node* node);</span><br><span class="line">// 用于返回指向 计算机 的指针</span><br><span class="line">int* selectComputer(struct Node* node);</span><br><span class="line">//通过成绩排序</span><br><span class="line">void sortToGrade(Node* headNode, MemberSelector selector);</span><br><span class="line">//统计总成绩并排序</span><br><span class="line">void totalSortToGrade(Node* headNode);</span><br><span class="line">//判断非空</span><br><span class="line">bool isNULL(Node* headNode);</span><br><span class="line"></span><br><span class="line">#endif // !_STUDENT_H_</span><br></pre></td></tr></table></figure>
+
+
+
+<p>Node.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;Node.h&quot;</span><br><span class="line">void stu_print(Student* stu)</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d\n&quot;, stu-&gt;stu_id, stu-&gt;name, stu-&gt;gender, stu-&gt;score_English, stu-&gt;score_Math, stu-&gt;score_Computer);</span><br><span class="line">&#125;</span><br><span class="line">int deleteDataByStu_id(Node* headNode, int posData)</span><br><span class="line">&#123;</span><br><span class="line">	Node* preNode = headNode;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	while (curNode != NULL &amp;&amp; curNode-&gt;data.stu_id != posData)</span><br><span class="line">	&#123;</span><br><span class="line">		preNode = curNode;</span><br><span class="line">		curNode = preNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	if (curNode == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		return 1;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		preNode-&gt;next = curNode-&gt;next;</span><br><span class="line">		free(curNode);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Node* searchDataByStu_id(struct Node* headNode, int posData)</span><br><span class="line">&#123;</span><br><span class="line">	Node* pmove = headNode-&gt;next;</span><br><span class="line">	while (pmove != NULL &amp;&amp; pmove-&gt;data.stu_id != posData)</span><br><span class="line">	&#123;</span><br><span class="line">		pmove = pmove-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	return pmove;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int count(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	int n = 0;</span><br><span class="line">	Node* preNode = headNode;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	while (curNode != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		preNode = curNode;</span><br><span class="line">		curNode = preNode-&gt;next;</span><br><span class="line">		n++;</span><br><span class="line">	&#125;</span><br><span class="line">	return n;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int* selectEnglish(struct Node* node)</span><br><span class="line">&#123;</span><br><span class="line">	return &amp;node-&gt;data.score_English;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int* selectMath(struct Node* node) &#123;</span><br><span class="line">	return &amp;node-&gt;data.score_Math;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int* selectComputer(struct Node* node) &#123;</span><br><span class="line">	return &amp;node-&gt;data.score_Computer;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void sortToGrade(Node* headNode, MemberSelector selector)</span><br><span class="line">&#123;</span><br><span class="line">	int n = count(headNode);</span><br><span class="line">	int score[MAX_LIMIT] = &#123; 0 &#125;;</span><br><span class="line">	Node* nodeLi[MAX_LIMIT] = &#123; NULL &#125;;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		score[i] = *selector(curNode);</span><br><span class="line">		nodeLi[i] = curNode;</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j = n - 1; j &gt; i; j--)</span><br><span class="line">		&#123;</span><br><span class="line">			int t = 0;</span><br><span class="line">			Node* temp = NULL;</span><br><span class="line">			if (score[j - 1] &lt; score[j])</span><br><span class="line">			&#123;</span><br><span class="line">				t = score[j - 1];</span><br><span class="line">				score[j - 1] = score[j];</span><br><span class="line">				score[j] = t;</span><br><span class="line">				temp = nodeLi[j - 1];</span><br><span class="line">				nodeLi[j - 1] = nodeLi[j];</span><br><span class="line">				nodeLi[j] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	int i = 0;</span><br><span class="line">	while (&amp;nodeLi[i]-&gt;data != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d\n&quot;, nodeLi[i]-&gt;data.stu_id, nodeLi[i]-&gt;data.name, nodeLi[i]-&gt;data.gender, nodeLi[i]-&gt;data.score_English, nodeLi[i]-&gt;data.score_Math, nodeLi[i]-&gt;data.score_Computer);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void totalSortToGrade(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	int n = count(headNode);</span><br><span class="line">	int score[MAX_LIMIT] = &#123; 0 &#125;;</span><br><span class="line">	Node* nodeLi[MAX_LIMIT] = &#123; NULL &#125;;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		score[i] = curNode-&gt;data.score_English + curNode-&gt;data.score_Math + curNode-&gt;data.score_Computer;</span><br><span class="line">		nodeLi[i] = curNode;</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int j = n - 1; j &gt; i; j--)</span><br><span class="line">		&#123;</span><br><span class="line">			int t = 0;</span><br><span class="line">			Node* temp = NULL;</span><br><span class="line">			if (score[j - 1] &lt; score[j])</span><br><span class="line">			&#123;</span><br><span class="line">				t = score[j - 1];</span><br><span class="line">				score[j - 1] = score[j];</span><br><span class="line">				score[j] = t;</span><br><span class="line">				temp = nodeLi[j - 1];</span><br><span class="line">				nodeLi[j - 1] = nodeLi[j];</span><br><span class="line">				nodeLi[j] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	int i = 0;</span><br><span class="line">	while (&amp;nodeLi[i]-&gt;data != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d 总分：%d\n&quot;, nodeLi[i]-&gt;data.stu_id, nodeLi[i]-&gt;data.name, nodeLi[i]-&gt;data.gender, nodeLi[i]-&gt;data.score_English, nodeLi[i]-&gt;data.score_Math, nodeLi[i]-&gt;data.score_Computer, score[i]);</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">bool isNULL(Node* headNode)</span><br><span class="line">&#123;</span><br><span class="line">	Node* curNode = headNode-&gt;next;</span><br><span class="line">	if (!curNode)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;系统中暂无数据，请先导入数据\n&quot;);</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line">	return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>List.h</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _LIST_H_</span><br><span class="line">#define _LIST_H_</span><br><span class="line">#include &quot;Node.h&quot;</span><br><span class="line">#include &lt;malloc.h&gt;</span><br><span class="line"></span><br><span class="line">//链表结构</span><br><span class="line">typedef struct List</span><br><span class="line">&#123;</span><br><span class="line">	size_t size;</span><br><span class="line">	Node* front;</span><br><span class="line">	Node* tail;</span><br><span class="line">&#125;List;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//创建链表</span><br><span class="line">List* createList();</span><br><span class="line">//摧毁链表</span><br><span class="line">void destoryList(List* list);</span><br><span class="line">//插入数据</span><br><span class="line">void push_back(List* list, Data val);</span><br><span class="line">//删除数据</span><br><span class="line">typedef bool (*CMP)(Data*,Data*);</span><br><span class="line">void remove_if(List* list, CMP cmp, Data* val);</span><br><span class="line">//遍历链表</span><br><span class="line">typedef void (*DoSomething)(Data*);</span><br><span class="line">void for_each(List* list, DoSomething dos);</span><br><span class="line"></span><br><span class="line">#endif // !_LIST_H_</span><br></pre></td></tr></table></figure>
+
+
+
+<p>List.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;List.h&quot;</span><br><span class="line">List* createList()</span><br><span class="line">&#123;</span><br><span class="line">	List* list = (List*)calloc(1, sizeof(List));</span><br><span class="line">	if (!list)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	//申请头节点</span><br><span class="line">	list-&gt;front = list-&gt;tail = (Node*)calloc(1, sizeof(Node));</span><br><span class="line">	if (!list-&gt;front)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	return list;</span><br><span class="line">&#125;</span><br><span class="line">void push_back(List* list, Data val)</span><br><span class="line">&#123;</span><br><span class="line">	//申请新节点</span><br><span class="line">	Node* newNode = (Node*)calloc(1, sizeof(Node));</span><br><span class="line">	if (!newNode)</span><br><span class="line">	&#123;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">	newNode-&gt;data = val;</span><br><span class="line">	//插入</span><br><span class="line">	list-&gt;tail-&gt;next = newNode;</span><br><span class="line">	list-&gt;tail = newNode;</span><br><span class="line">	list-&gt;size++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void destoryList(List* list)</span><br><span class="line">&#123;</span><br><span class="line">	Node* temp;</span><br><span class="line">	Node* node = list-&gt;front;</span><br><span class="line">	while (node != NULL) &#123;</span><br><span class="line">		temp = node;       // 存储当前节点的地址</span><br><span class="line">		node = node-&gt;next; // 移动到下一个节点</span><br><span class="line">		free(temp);        // 释放当前节点</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void for_each(List* list, DoSomething dos)</span><br><span class="line">&#123;</span><br><span class="line">	Node* curNode = list-&gt;front-&gt;next;</span><br><span class="line">	while (curNode)</span><br><span class="line">	&#123;</span><br><span class="line">		//stu_print(&amp;curNode-&gt;data);</span><br><span class="line">		dos(&amp;curNode-&gt;data);</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>Power.h</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _POWER_H_</span><br><span class="line">#define _POWER_H_</span><br><span class="line">#define MAX_LIMIT 100 </span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;malloc.h&gt;</span><br><span class="line">//定义权限</span><br><span class="line">typedef struct Authority</span><br><span class="line">&#123;</span><br><span class="line">	int account;</span><br><span class="line">	char password[MAX_LIMIT];</span><br><span class="line">	int grade;</span><br><span class="line">&#125;Authority;</span><br><span class="line"></span><br><span class="line">typedef struct Power</span><br><span class="line">&#123;</span><br><span class="line">	Authority authority;</span><br><span class="line">	struct Power* next;</span><br><span class="line">&#125;Power;</span><br><span class="line"></span><br><span class="line">Power* searchAuthorityByAccount(struct Power* headPower, int posAuthority);</span><br><span class="line">int deleteAuthorityByAccount(Power* headPower, int posAuthority);</span><br><span class="line"></span><br><span class="line">#endif // !_POWER_H_</span><br></pre></td></tr></table></figure>
+
+
+
+<p>Power.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;Power.h&quot;</span><br><span class="line">Power* searchAuthorityByAccount(struct Power* headPower, int posAuthority)</span><br><span class="line">&#123;</span><br><span class="line">	Power* pmove = headPower-&gt;next;</span><br><span class="line">	while (pmove != NULL &amp;&amp; pmove-&gt;authority.account != posAuthority)</span><br><span class="line">	&#123;</span><br><span class="line">		pmove = pmove-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	return pmove;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int deleteAuthorityByAccount(Power* headPower, int posAuthority)</span><br><span class="line">&#123;</span><br><span class="line">	Power* prePower = headPower;</span><br><span class="line">	Power* curPower = headPower-&gt;next;</span><br><span class="line">	while (curPower != NULL &amp;&amp; curPower-&gt;authority.account != posAuthority)</span><br><span class="line">	&#123;</span><br><span class="line">		prePower = curPower;</span><br><span class="line">		curPower = prePower-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	if (curPower == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		return 1;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		prePower-&gt;next = curPower-&gt;next;</span><br><span class="line">		free(curPower);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>PowerList.h</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#ifndef _POWERList_H_</span><br><span class="line">#define _POWERList_H_</span><br><span class="line">#include &quot;Power.h&quot;</span><br><span class="line">#include &lt;malloc.h&gt;</span><br><span class="line">//链表结构</span><br><span class="line">typedef struct PowerList</span><br><span class="line">&#123;</span><br><span class="line">	size_t size;</span><br><span class="line">	Power* front;</span><br><span class="line">	Power* tail;</span><br><span class="line">&#125;PowerList;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//创建链表</span><br><span class="line">PowerList* createPowerList();</span><br><span class="line">//摧毁链表</span><br><span class="line">void destoryPowerList(PowerList* PowerList);</span><br><span class="line">//插入数据</span><br><span class="line">void PowerPush_back(PowerList* PowerList, Authority val);</span><br><span class="line"></span><br><span class="line">#endif // !_POWERList_H_</span><br></pre></td></tr></table></figure>
+
+
+
+<p>PowerList.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;PowerList.h&quot;</span><br><span class="line">PowerList* createPowerList()</span><br><span class="line">&#123;</span><br><span class="line">	PowerList* powerList = (PowerList*)calloc(1, sizeof(PowerList));</span><br><span class="line">	if (!powerList)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	//申请头节点</span><br><span class="line">	powerList-&gt;front = powerList-&gt;tail = (Power*)calloc(1, sizeof(Power));</span><br><span class="line">	if (!powerList-&gt;front)</span><br><span class="line">	&#123;</span><br><span class="line">		return NULL;</span><br><span class="line">	&#125;</span><br><span class="line">	return powerList;</span><br><span class="line">&#125;</span><br><span class="line">void PowerPush_back(PowerList* powerList, Authority val)</span><br><span class="line">&#123;</span><br><span class="line">	//申请新节点</span><br><span class="line">	Power* newPower = (Power*)calloc(1, sizeof(Power));</span><br><span class="line">	if (!newPower)</span><br><span class="line">	&#123;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">	newPower-&gt;authority = val;</span><br><span class="line">	//插入</span><br><span class="line">	powerList-&gt;tail-&gt;next = newPower;</span><br><span class="line">	powerList-&gt;tail = newPower;</span><br><span class="line">	powerList-&gt;size++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void destoryPowerList(PowerList* PowerList)</span><br><span class="line">&#123;</span><br><span class="line">	Power* temp;</span><br><span class="line">	Power* Power = PowerList-&gt;front;</span><br><span class="line">	while (Power != NULL) &#123;</span><br><span class="line">		temp = Power;       // 存储当前节点的地址</span><br><span class="line">		Power = Power-&gt;next; // 移动到下一个节点</span><br><span class="line">		free(temp);        // 释放当前节点</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>main.cpp</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br><span class="line">534</span><br><span class="line">535</span><br><span class="line">536</span><br><span class="line">537</span><br><span class="line">538</span><br><span class="line">539</span><br><span class="line">540</span><br><span class="line">541</span><br><span class="line">542</span><br><span class="line">543</span><br><span class="line">544</span><br><span class="line">545</span><br><span class="line">546</span><br><span class="line">547</span><br><span class="line">548</span><br><span class="line">549</span><br><span class="line">550</span><br><span class="line">551</span><br><span class="line">552</span><br><span class="line">553</span><br><span class="line">554</span><br><span class="line">555</span><br><span class="line">556</span><br><span class="line">557</span><br><span class="line">558</span><br><span class="line">559</span><br><span class="line">560</span><br><span class="line">561</span><br><span class="line">562</span><br><span class="line">563</span><br><span class="line">564</span><br></pre></td><td class="code"><pre><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">#include &quot;List.h&quot;</span><br><span class="line">#include &quot;PowerList.h&quot;</span><br><span class="line">#define MAX_STRINGS 100 // 最大字符串数量</span><br><span class="line">#define MAX_LENGTH 100  // 单个字符串的最大长度</span><br><span class="line">List* glist = NULL;</span><br><span class="line">PowerList* plist = NULL;</span><br><span class="line">int grade = 0;</span><br><span class="line">char password[MAX_LENGTH];</span><br><span class="line">//主菜单</span><br><span class="line">int mainMenu();</span><br><span class="line">//显示</span><br><span class="line">void showAllitem();</span><br><span class="line">//增加</span><br><span class="line">int additem();</span><br><span class="line">//搜索</span><br><span class="line">void searchitem();</span><br><span class="line">//删除</span><br><span class="line">void delitem();</span><br><span class="line">//统计</span><br><span class="line">void statisticitem();</span><br><span class="line">//排序</span><br><span class="line">void sortitem();</span><br><span class="line">//修改</span><br><span class="line">void alteritem();</span><br><span class="line">//保存文件</span><br><span class="line">void saveToFile(struct Node* headNode, const char* fileName);</span><br><span class="line">//读取文件</span><br><span class="line">void readFromFile(struct Node* headNode, const char* fileName);</span><br><span class="line">//保存文件</span><br><span class="line">void PsaveToFile(struct Power* headNode, const char* fileName);</span><br><span class="line">//读取文件</span><br><span class="line">void PreadFromFile(struct Power* headNode, const char* fileName);</span><br><span class="line">//权限验证</span><br><span class="line">void verifyToAuthority();</span><br><span class="line">//新增权限</span><br><span class="line">void addAuthority();</span><br><span class="line">//删除权限</span><br><span class="line">void delAuthority();</span><br><span class="line">//退出权限</span><br><span class="line">void exitAuthority();</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	glist = createList();</span><br><span class="line">	plist = createPowerList();</span><br><span class="line">	readFromFile(glist-&gt;front, &quot;student.txt&quot;);</span><br><span class="line">	PreadFromFile(plist-&gt;front, &quot;power.txt&quot;);</span><br><span class="line">	bool isDone = false;</span><br><span class="line">	while (!isDone)</span><br><span class="line">	&#123;</span><br><span class="line">		switch (mainMenu())</span><br><span class="line">		&#123;</span><br><span class="line">			case 0:</span><br><span class="line">				isDone = true;</span><br><span class="line">				saveToFile(glist-&gt;front, &quot;student.txt&quot;);</span><br><span class="line">				PsaveToFile(plist-&gt;front, &quot;power.txt&quot;);</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				if (isNULL(glist-&gt;front))</span><br><span class="line">				&#123;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				showAllitem();</span><br><span class="line">				break;</span><br><span class="line">			case 2:</span><br><span class="line">				if (grade &gt;= 2)</span><br><span class="line">				&#123;</span><br><span class="line">					additem();</span><br><span class="line">					saveToFile(glist-&gt;front, &quot;student.txt&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					printf(&quot;权限不足\n&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 3:</span><br><span class="line">				if (isNULL(glist-&gt;front))</span><br><span class="line">				&#123;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				searchitem();</span><br><span class="line">				break;</span><br><span class="line">			case 4:</span><br><span class="line">				if (grade &gt;= 3)</span><br><span class="line">				&#123;</span><br><span class="line">					if (isNULL(glist-&gt;front))</span><br><span class="line">					&#123;</span><br><span class="line">						break;</span><br><span class="line">					&#125;</span><br><span class="line">					delitem();</span><br><span class="line">					saveToFile(glist-&gt;front, &quot;student.txt&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					printf(&quot;权限不足\n&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 5:</span><br><span class="line">				if (isNULL(glist-&gt;front))</span><br><span class="line">				&#123;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				statisticitem();</span><br><span class="line">				break;</span><br><span class="line">			case 6:</span><br><span class="line">				if (isNULL(glist-&gt;front))</span><br><span class="line">				&#123;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				sortitem();</span><br><span class="line">				break;</span><br><span class="line">			case 7:</span><br><span class="line">				if (isNULL(glist-&gt;front))</span><br><span class="line">				&#123;</span><br><span class="line">					break;</span><br><span class="line">				&#125;</span><br><span class="line">				alteritem();</span><br><span class="line">				saveToFile(glist-&gt;front, &quot;student.txt&quot;);</span><br><span class="line">				PsaveToFile(plist-&gt;front, &quot;power.txt&quot;);</span><br><span class="line">				break;</span><br><span class="line">			case 8:</span><br><span class="line">				verifyToAuthority();</span><br><span class="line">				break;</span><br><span class="line">			case 9:</span><br><span class="line">				addAuthority();</span><br><span class="line">				PsaveToFile(plist-&gt;front, &quot;power.txt&quot;);</span><br><span class="line">				break;</span><br><span class="line">			case 10:</span><br><span class="line">				delAuthority();</span><br><span class="line">				PsaveToFile(plist-&gt;front, &quot;power.txt&quot;);</span><br><span class="line">				break;</span><br><span class="line">			case 11:</span><br><span class="line">				exitAuthority();</span><br><span class="line">				break;</span><br><span class="line">			default:</span><br><span class="line">				printf(&quot;非法输入，请输入选项（0 - 11）\n&quot;);</span><br><span class="line">				break;</span><br><span class="line">		&#125;</span><br><span class="line">		//清屏</span><br><span class="line">		system(&quot;pause&quot;);</span><br><span class="line">		system(&quot;cls&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	destoryList(glist);</span><br><span class="line">	destoryPowerList(plist);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line">int mainMenu()</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;**********学生管理系统**********\n&quot;);</span><br><span class="line">	printf(&quot;*      0.保存信息并退出        *\n&quot;);</span><br><span class="line">	printf(&quot;*      1.显示学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      2.新增学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      3.搜索学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      4.删除学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      5.统计学生性别信息      *\n&quot;);</span><br><span class="line">	printf(&quot;*      6.按成绩排序            *\n&quot;);</span><br><span class="line">	printf(&quot;*      7.修改学生信息          *\n&quot;);</span><br><span class="line">	printf(&quot;*      8.权限验证              *\n&quot;);</span><br><span class="line">	printf(&quot;*      9.新增权限              *\n&quot;);</span><br><span class="line">	printf(&quot;*      10.删除权限             *\n&quot;);</span><br><span class="line">	printf(&quot;*      11.退出权限             *\n&quot;);</span><br><span class="line">	printf(&quot;********************************\n&quot;);</span><br><span class="line">	printf(&quot;请输入选项（0 - 11）：&quot;);</span><br><span class="line">	int op;</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;op);</span><br><span class="line">	return op;</span><br><span class="line">&#125;</span><br><span class="line">void showAllitem()</span><br><span class="line">&#123;</span><br><span class="line">	for_each(glist, stu_print);</span><br><span class="line">&#125;</span><br><span class="line">int additem()</span><br><span class="line">&#123;</span><br><span class="line">	Student stu;</span><br><span class="line">	printf(&quot;输入学生的学号&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu.stu_id);</span><br><span class="line">	Node* result = searchDataByStu_id(glist-&gt;front, stu.stu_id);</span><br><span class="line">	if (result)</span><br><span class="line">	&#123;</span><br><span class="line">		int tt;</span><br><span class="line">		printf(&quot;学号已存在，是否确认修改信息？（0.是，1.否）\n&quot;);</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;tt);</span><br><span class="line">		if (tt)</span><br><span class="line">		&#123;</span><br><span class="line">			return 1;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	getchar();</span><br><span class="line">	printf(&quot;输入学生的姓名&gt;&quot;);</span><br><span class="line">	gets_s(stu.name, 20);</span><br><span class="line">	printf(&quot;输入学生的性别&gt;&quot;);</span><br><span class="line">	gets_s(stu.gender, 20);</span><br><span class="line">	printf(&quot;输入学生的英语成绩&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu.score_English);</span><br><span class="line">	printf(&quot;输入学生的高数成绩&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu.score_Math);</span><br><span class="line">	printf(&quot;输入学生的计算机成绩&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu.score_Computer);</span><br><span class="line">	sprintf(password, &quot;%d&quot;, stu.stu_id);</span><br><span class="line">	strcpy(stu.password, password);</span><br><span class="line">	stu.grade = 1;</span><br><span class="line">	push_back(glist, stu);</span><br><span class="line">	stu_print(&amp;stu);</span><br><span class="line">	return 0;</span><br><span class="line">	&#125;</span><br><span class="line">void searchitem()</span><br><span class="line">&#123;</span><br><span class="line">	int stu_id;</span><br><span class="line">	printf(&quot;请输入要查询的学号&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu_id);</span><br><span class="line">	Node* result = searchDataByStu_id(glist-&gt;front, stu_id);</span><br><span class="line">	if (result == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;未找到匹配结果\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		stu_print(&amp;result-&gt;data);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void delitem()</span><br><span class="line">&#123;</span><br><span class="line">	showAllitem();</span><br><span class="line">	int stu_id;</span><br><span class="line">	printf(&quot;请输入要删除的学号&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu_id);</span><br><span class="line">	if (!deleteDataByStu_id(glist-&gt;front, stu_id))</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;删除成功\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;删除失败\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void statisticitem()</span><br><span class="line">&#123;</span><br><span class="line">	int n = count(glist-&gt;front);</span><br><span class="line">	int i = 0;</span><br><span class="line">	char strings[MAX_STRINGS][MAX_LENGTH] ;</span><br><span class="line">	int frequency[MAX_STRINGS] = &#123; 0 &#125;;</span><br><span class="line">	Node* curNode = glist-&gt;front-&gt;next;</span><br><span class="line">	while (curNode!=NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		strcpy(strings[i], curNode-&gt;data.gender);</span><br><span class="line">		curNode = curNode-&gt;next;</span><br><span class="line">		i++;</span><br><span class="line">	&#125;</span><br><span class="line">	curNode = glist-&gt;front-&gt;next;</span><br><span class="line">	Node* Nodeli[MAX_STRINGS][MAX_LENGTH] = &#123;NULL&#125;;</span><br><span class="line">	for (int i = 0; i &lt; n; i++) &#123;</span><br><span class="line">		if (frequency[i] == 0) &#123;</span><br><span class="line">			// 只处理尚未统计的字符串</span><br><span class="line">			frequency[i] = 1; // 至少出现一次</span><br><span class="line">			Nodeli[i][0] = curNode;</span><br><span class="line">			Node* nextNode = curNode;</span><br><span class="line">			curNode = curNode-&gt;next;</span><br><span class="line">			for (int j = i + 1; j &lt; n; j++) &#123;</span><br><span class="line">				nextNode = nextNode-&gt;next;</span><br><span class="line">				if (strcmp(strings[i], strings[j]) == 0) &#123;</span><br><span class="line">					Nodeli[i][frequency[i]] = nextNode;</span><br><span class="line">					frequency[i]++;</span><br><span class="line">					frequency[j] = -1; // 标记为已统计</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		if (frequency[i] &gt; 0)</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;%s\n&quot;, strings[i]);</span><br><span class="line">			for (int j = 0; j &lt; frequency[i]; j++)</span><br><span class="line">			&#123;</span><br><span class="line">				stu_print(&amp;Nodeli[i][j]-&gt;data);</span><br><span class="line">			&#125;</span><br><span class="line">			printf(&quot;%s生总数为：%d\n&quot;, strings[i], frequency[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void sortitem()</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;请选择&gt;\n1.按英语成绩排序\n2.按高数成绩排序\n3.按计算机成绩排序\n4.按总分排序\n&quot;);</span><br><span class="line">	int select;</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;select);</span><br><span class="line">	switch (select)</span><br><span class="line">	&#123;</span><br><span class="line">		case 1:</span><br><span class="line">			sortToGrade(glist-&gt;front, selectEnglish);</span><br><span class="line">			break;</span><br><span class="line">		case 2:</span><br><span class="line">			sortToGrade(glist-&gt;front, selectMath);</span><br><span class="line">			break;</span><br><span class="line">		case 3:</span><br><span class="line">			sortToGrade(glist-&gt;front, selectComputer);</span><br><span class="line">			break;</span><br><span class="line">		case 4:</span><br><span class="line">			totalSortToGrade(glist-&gt;front);</span><br><span class="line">			break;</span><br><span class="line">		default:</span><br><span class="line">			printf(&quot;非法输入，请输入选项（ 1 - 4 ）\n&quot;);</span><br><span class="line">			break;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line">void alteritem()</span><br><span class="line">&#123;</span><br><span class="line">	showAllitem();</span><br><span class="line">	int stu_id;</span><br><span class="line">	printf(&quot;请输入要修改的学号&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;stu_id);</span><br><span class="line">	Node* result = searchDataByStu_id(glist-&gt;front, stu_id);</span><br><span class="line">	if (result == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;未找到匹配结果\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		if (grade &lt;2)</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;学生登录\n&quot;);</span><br><span class="line">			printf(&quot;请输入密码&gt;&quot;);</span><br><span class="line">			scanf(&quot;%s&quot;, &amp;password);</span><br><span class="line">			if (!strcmp(result-&gt;data.password, password));</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;密码错误\n&quot;);</span><br><span class="line">				return;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		printf(&quot;请选择您要修改的内容( 0 - 7 )&gt;\n0.学号，1.姓名，2.性别，3.英语，4.高数，5.计算机，6.密码，7.权限\n&quot;);</span><br><span class="line">		int num;</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;num);</span><br><span class="line">		switch (num)</span><br><span class="line">		&#123;</span><br><span class="line">		case 0:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的学号&gt;&quot;);</span><br><span class="line">				int temp1;</span><br><span class="line">				scanf(&quot;%d&quot;, &amp;temp1);</span><br><span class="line">				if (temp1 != result-&gt;data.stu_id &amp;&amp; !searchDataByStu_id(glist-&gt;front, temp1))</span><br><span class="line">				&#123;</span><br><span class="line">					result-&gt;data.stu_id = temp1;</span><br><span class="line">				&#125;</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					printf(&quot;学号已存在，修改失败\n&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		case 1:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的姓名&gt;&quot;);</span><br><span class="line">				scanf(&quot;%s&quot;, &amp;result-&gt;data.name);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 2:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的性别&gt;&quot;);</span><br><span class="line">				scanf(&quot;%s&quot;, &amp;result-&gt;data.gender);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 3:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的英语成绩&gt;&quot;);</span><br><span class="line">				scanf(&quot;%d&quot;, &amp;result-&gt;data.score_English);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 4:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的高数成绩&gt;&quot;);</span><br><span class="line">				scanf(&quot;%d&quot;, &amp;result-&gt;data.score_Math);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 5:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 2 || grade &gt;= 2)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的计算机成绩&gt;&quot;);</span><br><span class="line">				scanf(&quot;%d&quot;, &amp;result-&gt;data.score_Computer);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 6:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 1 || grade &gt;= 1)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的密码&gt;&quot;);</span><br><span class="line">				scanf(&quot;%s&quot;, &amp;result-&gt;data.password);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		case 7:</span><br><span class="line">			if (result-&gt;data.grade &gt;= 3 || grade &gt;= 3)</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;请输入修改后的权限&gt;&quot;);</span><br><span class="line">				scanf(&quot;%d&quot;, &amp;result-&gt;data.grade);</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				printf(&quot;权限不足\n&quot;);</span><br><span class="line">			&#125;</span><br><span class="line">			break;</span><br><span class="line">		default:</span><br><span class="line">			printf(&quot;非法输入，请输入选项（ 0 - 7 ）\n&quot;);</span><br><span class="line">			break;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void saveToFile(struct Node* headNode, const char* fileName)</span><br><span class="line">&#123;</span><br><span class="line">	struct Node* pmove = headNode-&gt;next;</span><br><span class="line">	FILE* fp = fopen(fileName, &quot;w&quot;);</span><br><span class="line">	while (pmove != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		fprintf(fp, &quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d 密码：%s 权限；%d\n&quot;, pmove-&gt;data.stu_id, pmove-&gt;data.name, pmove-&gt;data.gender, pmove-&gt;data.score_English, pmove-&gt;data.score_Math, pmove-&gt;data.score_Computer,pmove-&gt;data.password,pmove-&gt;data.grade);</span><br><span class="line">		pmove = pmove-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	fclose(fp);</span><br><span class="line">&#125;</span><br><span class="line">void readFromFile(struct Node* headNode, const char* fileName)</span><br><span class="line">&#123;</span><br><span class="line">	FILE* fp = fopen(fileName, &quot;r&quot;);</span><br><span class="line">	if (fp == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		fp = fopen(fileName, &quot;w+&quot;);</span><br><span class="line">		fclose(fp);</span><br><span class="line">	&#125;</span><br><span class="line">	Student stu;</span><br><span class="line">	while (fscanf(fp, &quot;学号：%d 姓名：%s 性别：%s 英语：%d 高数：%d 计算机：%d 密码：%s 权限；%d\n&quot;,</span><br><span class="line">		&amp;stu.stu_id, &amp;stu.name, &amp;stu.gender, &amp;stu.score_English, &amp;stu.score_Math, &amp;stu.score_Computer,&amp;stu.password,&amp;stu.grade) != EOF)</span><br><span class="line">	&#123;</span><br><span class="line">		push_back(glist, stu);</span><br><span class="line">	&#125;</span><br><span class="line">	fclose(fp);</span><br><span class="line">&#125;</span><br><span class="line">void PsaveToFile(struct Power* headNode, const char* fileName)</span><br><span class="line">&#123;</span><br><span class="line">	struct Power* pmove = headNode-&gt;next;</span><br><span class="line">	FILE* fp = fopen(fileName, &quot;w&quot;);</span><br><span class="line">	while (pmove != NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		fprintf(fp,&quot;账号：%d 密码：%s 权限：%d\n&quot;,pmove-&gt;authority.account,pmove-&gt;authority.password,pmove-&gt;authority.grade);</span><br><span class="line">		pmove = pmove-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	fclose(fp);</span><br><span class="line">&#125;</span><br><span class="line">void PreadFromFile(struct Power* headNode, const char* fileName)</span><br><span class="line">&#123;</span><br><span class="line">	FILE* fp = fopen(fileName, &quot;r&quot;);</span><br><span class="line">	if (fp == NULL)</span><br><span class="line">	&#123;</span><br><span class="line">		fp = fopen(fileName, &quot;w+&quot;);</span><br><span class="line">		fclose(fp);</span><br><span class="line">	&#125;</span><br><span class="line">	Authority aut;</span><br><span class="line">	while (fscanf(fp, &quot;账号：%d 密码：%s 权限：%d\n&quot;,&amp;aut.account,&amp;aut.password,&amp;aut.grade)!=EOF)</span><br><span class="line">	&#123;</span><br><span class="line">		PowerPush_back(plist, aut);</span><br><span class="line">	&#125;</span><br><span class="line">	fclose(fp);</span><br><span class="line">&#125;</span><br><span class="line">void verifyToAuthority()</span><br><span class="line">&#123;</span><br><span class="line">	int account;</span><br><span class="line"></span><br><span class="line">	printf(&quot;请输入要登录的账号&gt;&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;, &amp;account);</span><br><span class="line">	Power* result = searchAuthorityByAccount(plist-&gt;front, account);</span><br><span class="line">	printf(&quot;请输入密码&gt;&quot;);</span><br><span class="line">	scanf(&quot;%s&quot;, &amp;password);</span><br><span class="line">	int* p = &amp;grade;</span><br><span class="line">	if (!strcmp(password,&quot;root&quot;))</span><br><span class="line">	&#123;</span><br><span class="line">		*p = 4;</span><br><span class="line">		printf(&quot;欢迎管理员登录，你的权限目前为%d级\n&quot;, *p);</span><br><span class="line">	&#125;</span><br><span class="line">	else if(result &amp;&amp; !strcmp(result-&gt;authority.password,password))</span><br><span class="line">	&#123;</span><br><span class="line">		*p = result-&gt;authority.grade;</span><br><span class="line">		printf(&quot;欢迎管理员登录，你的权限目前为%d级\n&quot;, *p);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;账号或密码错误\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void addAuthority()</span><br><span class="line">&#123;</span><br><span class="line">	Authority aut;</span><br><span class="line">	if (grade &gt;= 3)</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;请输入账号&gt;&quot;);</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;aut.account);</span><br><span class="line">		printf(&quot;请输入密码&gt;&quot;);</span><br><span class="line">		scanf(&quot;%s&quot;, &amp;aut.password);</span><br><span class="line">		printf(&quot;请输入该账号的权限&gt;&quot;);</span><br><span class="line">		int temp2;</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;temp2);</span><br><span class="line">		if (temp2 &lt; grade)</span><br><span class="line">		&#123;</span><br><span class="line">			aut.grade = temp2;</span><br><span class="line">		&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;权限不足\n&quot;);</span><br><span class="line">			return;</span><br><span class="line">		&#125;</span><br><span class="line">		PowerPush_back(plist, aut);</span><br><span class="line">		printf(&quot;账号：%d 密码：%s 权限：%d\n&quot;, aut.account, aut.password, aut.grade);</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		printf(&quot;权限不足\n&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void delAuthority()</span><br><span class="line">&#123;</span><br><span class="line">	if (grade &gt;= 3)</span><br><span class="line">	&#123;</span><br><span class="line">		int account;</span><br><span class="line">		printf(&quot;请输入要删除的账号&gt;&quot;);</span><br><span class="line">		scanf(&quot;%d&quot;, &amp;account);</span><br><span class="line">		deleteAuthorityByAccount(plist-&gt;front, account);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void exitAuthority()</span><br><span class="line">&#123;</span><br><span class="line">	int* p = &amp;grade;</span><br><span class="line">	*p = 0;</span><br><span class="line">	printf(&quot;权限已退出\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Modetou</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://modetou.github.io/2024/06/16/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/">https://modetou.github.io/2024/06/16/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%BB%8F%E9%AA%8C%E7%AC%94%E8%AE%B0/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Modetou</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/06/30/%E5%91%A8%E6%8A%A5/2024%E5%B9%B46%E6%9C%8824%E6%97%A5-2024%E5%B9%B46%E6%9C%8830%E6%97%A5/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-06-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Modetou
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/05/27/%E5%91%A8%E6%8A%A5/2024%E5%B9%B45%E6%9C%8820%E6%97%A5-2024%E5%B9%B45%E6%9C%8826%E6%97%A5/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Modetou
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2024</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Modetou</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:195968414@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=195968414" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 195968414" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
