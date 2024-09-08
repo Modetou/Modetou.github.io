@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-28
+                    2024-08-31
                 </div>
                 
 
@@ -464,59 +464,22 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2024年7月22日-2024年7月28日"><a href="#2024年7月22日-2024年7月28日" class="headerlink" title="2024年7月22日-2024年7月28日"></a>2024年7月22日-2024年7月28日</h2><blockquote>
-<p>tag：星辰大海组学习周报</p>
-</blockquote>
-<h3 id="本周学习大纲"><a href="#本周学习大纲" class="headerlink" title="本周学习大纲"></a>本周学习大纲</h3><p>二维费用背包，分组背包</p>
-<h3 id="本周学习日历"><a href="#本周学习日历" class="headerlink" title="本周学习日历"></a>本周学习日历</h3><table>
-<thead>
-<tr>
-<th>日历</th>
-<th>学习内容</th>
-<th>其他</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>星期一</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期二</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期三</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期四</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期五</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期六</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期天</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="本周学习内容-及-收获"><a href="#本周学习内容-及-收获" class="headerlink" title="本周学习内容 及 收获"></a>本周学习内容 及 收获</h3><p>二维费用背包，分组背包</p>
-<h4 id="完成状态："><a href="#完成状态：" class="headerlink" title="完成状态："></a>完成状态：</h4><p>已完成本周任务。</p>
-<h5 id="学习内容："><a href="#学习内容：" class="headerlink" title="学习内容："></a>学习内容：</h5><p>二维费用背包，分组背包</p>
-<h5 id="学习收获"><a href="#学习收获" class="headerlink" title="学习收获"></a>学习收获</h5><p>二维费用背包，分组背包</p>
-<h3 id="下周学习大纲"><a href="#下周学习大纲" class="headerlink" title="下周学习大纲"></a>下周学习大纲</h3><p>算法学习，项目实践。</p>
+                <p>根据数据的类型和分布，选择合适的相关性系数。常用的有：</p>
+<ul>
+<li><strong>皮尔逊相关系数（Pearson’s r）</strong>：适用于连续变量，且变量间大致呈线性关系，且数据服从正态分布。</li>
+<li><strong>斯皮尔曼等级相关系数（Spearman’s rho）</strong>：适用于等级数据或连续数据但不是正态分布的情况，衡量的是变量间等级的相关性。</li>
+<li><strong>肯德尔等级相关系数（Kendall’s tau）</strong>：也是一种非参数的相关性度量，适用于等级数据。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr, spearmanr, kendalltau</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> scipy.stats <span class="keyword">as</span> stats</span><br><span class="line"></span><br><span class="line"><span class="comment"># 假设df是你的DataFrame，包含变量X和Y</span></span><br><span class="line"><span class="comment"># 这里我们使用Pandas的内置函数来计算皮尔逊相关系数</span></span><br><span class="line">df = pd.read_excel(<span class="string">r&#x27;C:\Users\26471\Desktop\c1_updated_data.xlsx&#x27;</span>)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">corrCalculate</span>(<span class="params">x,y</span>):</span><br><span class="line">    corr_pearson = df[x].corr(df[y])</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;Pearson Correlation Coefficient: <span class="subst">&#123;corr_pearson&#125;</span>&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 或者使用SciPy的pearsonr函数，它还提供p值</span></span><br><span class="line">    pearson_coef, p_value = pearsonr(df[x], df[y])</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;Pearson Correlation Coefficient: <span class="subst">&#123;pearson_coef&#125;</span>, p-value: <span class="subst">&#123;p_value&#125;</span>&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 计算斯皮尔曼等级相关系数</span></span><br><span class="line">    corr_spearman = spearmanr(df[x], df[y])[<span class="number">0</span>]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;Spearman Correlation Coefficient: <span class="subst">&#123;corr_spearman&#125;</span>&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 计算肯德尔等级相关系数</span></span><br><span class="line">    corr_kendall = kendalltau(df[x], df[y])[<span class="number">0</span>]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;Kendall Correlation Coefficient: <span class="subst">&#123;corr_kendall&#125;</span>&#x27;</span>)</span><br><span class="line">corrCalculate(<span class="string">&#x27;纹饰&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line">corrCalculate(<span class="string">&#x27;表面风化&#x27;</span>,<span class="string">&#x27;纹饰&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line">corrCalculate(<span class="string">&#x27;颜色&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line">corrCalculate(<span class="string">&#x27;表面风化&#x27;</span>,<span class="string">&#x27;颜色&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line">corrCalculate(<span class="string">&#x27;类型&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line">corrCalculate(<span class="string">&#x27;表面风化&#x27;</span>,<span class="string">&#x27;类型&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>()</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">kaFang</span>(<span class="params">x,y</span>):</span><br><span class="line">    contingency_table = pd.crosstab(df[x], df[y])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行卡方检验</span></span><br><span class="line">    chi2, p, dof, expected = stats.chi2_contingency(contingency_table)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(f&quot;Chi2 Statistic: &#123;chi2&#125;&quot;)</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;P-value: <span class="subst">&#123;p&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="comment"># print(f&quot;Degrees of Freedom: &#123;dof&#125;&quot;)</span></span><br><span class="line">    <span class="comment"># print(f&quot;Expected Frequencies:\n&#123;expected&#125;&quot;)</span></span><br><span class="line">kaFang(<span class="string">&#x27;纹饰&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br><span class="line">kaFang(<span class="string">&#x27;颜色&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br><span class="line">kaFang(<span class="string">&#x27;类型&#x27;</span>,<span class="string">&#x27;表面风化&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<p>Pearson Correlation Coefficient: -0.048967771093618655<br>Pearson Correlation Coefficient: -0.04896777109361869, p-value: 0.7150902207486441<br>Spearman Correlation Coefficient: -0.03726378434732229<br>Kendall Correlation Coefficient: -0.03593120370908636</p>
+<p>Pearson Correlation Coefficient: -0.048967771093618655<br>Pearson Correlation Coefficient: -0.048967771093618745, p-value: 0.7150902207486441<br>Spearman Correlation Coefficient: -0.03726378434732228<br>Kendall Correlation Coefficient: -0.03593120370908636</p>
+<p>Pearson Correlation Coefficient: 0.0650182089053177<br>Pearson Correlation Coefficient: 0.06501820890531776, p-value: 0.6277483905616346<br>Spearman Correlation Coefficient: 0.06241959845558642<br>Kendall Correlation Coefficient: 0.05736163560068633</p>
+<p>Pearson Correlation Coefficient: 0.0650182089053177<br>Pearson Correlation Coefficient: 0.0650182089053178, p-value: 0.6277483905616346<br>Spearman Correlation Coefficient: 0.06241959845558642<br>Kendall Correlation Coefficient: 0.057361635600686335</p>
+<p>Pearson Correlation Coefficient: -0.3444233600968324<br>Pearson Correlation Coefficient: -0.34442336009683233, p-value: 0.00810917329172189<br>Spearman Correlation Coefficient: -0.3444233600968322<br>Kendall Correlation Coefficient: -0.34442336009683217</p>
+<p>Pearson Correlation Coefficient: -0.3444233600968324<br>Pearson Correlation Coefficient: -0.3444233600968323, p-value: 0.00810917329172189<br>Spearman Correlation Coefficient: -0.34442336009683217<br>Kendall Correlation Coefficient: -0.34442336009683217</p>
+<p>P-value: 0.08388839673210005<br>P-value: 0.42181838890239015<br>P-value: 0.019548014331003314</p>
 
                 
             </div>
@@ -543,7 +506,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2024/07/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B47%E6%9C%8822%E6%97%A5-2024%E5%B9%B47%E6%9C%8828%E6%97%A5/">https://modetou.github.io/2024/07/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B47%E6%9C%8822%E6%97%A5-2024%E5%B9%B47%E6%9C%8828%E6%97%A5/</a>
+                    <a href="https://modetou.github.io/2024/08/31/c1_1/">https://modetou.github.io/2024/08/31/c1_1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,7 +715,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/08/08/python/%E6%A0%91%E5%BD%A2DP/">
+                <a href="/2024/09/08/%E5%91%A8%E6%8A%A5/2024%E5%B9%B49%E6%9C%882%E6%97%A5-2024%E5%B9%B49%E6%9C%888%E6%97%A5/">
                     <div class="card-image">
                         
                         
@@ -769,7 +732,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-08-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-09-08
                         </span>
                         <span class="publish-author">
                             
@@ -789,7 +752,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/06/30/java/%E6%A0%87%E5%87%86%E7%9A%84JavaBean%E7%B1%BB/">
+                <a href="/2024/08/30/%E7%AC%AC%E4%B8%80%E8%8A%82%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
                     <div class="card-image">
                         
                         
@@ -806,7 +769,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-30
                             </span>
                         <span class="publish-author">
                             

@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-07-28
+                    2024-08-08
                 </div>
                 
 
@@ -464,59 +464,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2024年7月22日-2024年7月28日"><a href="#2024年7月22日-2024年7月28日" class="headerlink" title="2024年7月22日-2024年7月28日"></a>2024年7月22日-2024年7月28日</h2><blockquote>
-<p>tag：星辰大海组学习周报</p>
-</blockquote>
-<h3 id="本周学习大纲"><a href="#本周学习大纲" class="headerlink" title="本周学习大纲"></a>本周学习大纲</h3><p>二维费用背包，分组背包</p>
-<h3 id="本周学习日历"><a href="#本周学习日历" class="headerlink" title="本周学习日历"></a>本周学习日历</h3><table>
-<thead>
-<tr>
-<th>日历</th>
-<th>学习内容</th>
-<th>其他</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>星期一</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期二</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期三</td>
-<td>二维费用背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期四</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期五</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期六</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-<tr>
-<td>星期天</td>
-<td>分组背包</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="本周学习内容-及-收获"><a href="#本周学习内容-及-收获" class="headerlink" title="本周学习内容 及 收获"></a>本周学习内容 及 收获</h3><p>二维费用背包，分组背包</p>
-<h4 id="完成状态："><a href="#完成状态：" class="headerlink" title="完成状态："></a>完成状态：</h4><p>已完成本周任务。</p>
-<h5 id="学习内容："><a href="#学习内容：" class="headerlink" title="学习内容："></a>学习内容：</h5><p>二维费用背包，分组背包</p>
-<h5 id="学习收获"><a href="#学习收获" class="headerlink" title="学习收获"></a>学习收获</h5><p>二维费用背包，分组背包</p>
-<h3 id="下周学习大纲"><a href="#下周学习大纲" class="headerlink" title="下周学习大纲"></a>下周学习大纲</h3><p>算法学习，项目实践。</p>
+                <h1 id="树形DP"><a href="#树形DP" class="headerlink" title="树形DP"></a>树形DP</h1><h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>树：具有树状解构性质的数据集合，由n个有限节点组成一个具有层次关系的集合。</p>
+<p>每个节点可以有多个子节点，仅可能有一个父节点。根节点没有父节点。</p>
+<p>dfs：深度优先搜索，本质是暴力枚举。深度优先，尽可能一条路走到底，走不了再回退。</p>
+<p>dp：动态规划，用于解决具有重叠子问题，最优子结构特征的问题。有无后效性，当前状态只会由之前的状态变化而来，不考虑未来对当前的影响。就像走楼梯，我们目前不考虑此人将来会从10级台阶退到3级再走一遍，我们只关心此人如何从0,1,2级台阶走上3级。</p>
+<h2 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h2><h3 id="P1352-没有上司的舞会"><a href="#P1352-没有上司的舞会" class="headerlink" title="P1352 没有上司的舞会"></a>P1352 没有上司的舞会</h3><p>某大学有 n 个职员，编号为 1…n。</p>
+<p>他们之间有从属关系，也就是说他们的关系就像一棵以校长为根的树，父结点就是子结点的直接上司。</p>
+<p>现在有个周年庆宴会，宴会每邀请来一个职员都会增加一定的快乐指数 ri，但是呢，如果某个职员的直接上司来参加舞会了，那么这个职员就无论如何也不肯来参加舞会了。</p>
+<p>所以，请你编程计算，邀请哪些职员可以使快乐指数最大，求最大的快乐指数。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入的第一行是一个整数 n。</p>
+<p>第 2 到第 (n+1) 行，每行一个整数，第 (i+1) 行的整数表示 i号职员的快乐指数 ri。</p>
+<p>第 (n+2)到第 2n 行，每行输入一对整数 l,k，代表 k是 l的直接上司。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出一行一个整数代表最大的快乐指数。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p>**输入 **</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1 3</span><br><span class="line">2 3</span><br><span class="line">6 4</span><br><span class="line">7 4</span><br><span class="line">4 5</span><br><span class="line">3 5</span><br></pre></td></tr></table></figure>
+
+<p>**输出 **</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><h4 id="数据规模与约定"><a href="#数据规模与约定" class="headerlink" title="数据规模与约定"></a>数据规模与约定</h4><p>对于 100%的数据，保证 1≤n≤6×10^3，−128≤ri≤127，1≤l,k≤n，且给出的关系一定是一棵树。</p>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><h3 id="存储部分"><a href="#存储部分" class="headerlink" title="存储部分"></a>存储部分</h3><p>本题中有提到n个职员间的关系是一棵树。对于树结构，考虑采用邻接表存储。</p>
+<p>在python中collections库中的defaultdict可以节省一些时间。</p>
+<p>对于邻接表存储树这样的有向无环图，我们还需要做一点点小小的任务，找到这棵树的根。</p>
+<p>由于根没有父节点，我们考虑通过入度确定根。只需要建立一个简单的列表维护入度即可。</p>
+<p>代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">in_degree=[0]*(n+1)</span><br><span class="line">for i in range(n-1):</span><br><span class="line">    l,k=map(int,input().split())</span><br><span class="line">    edge[k].append(l)</span><br><span class="line">    in_degree[l]+=1</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="dp部分"><a href="#dp部分" class="headerlink" title="dp部分"></a>dp部分</h3><p>在树的动态规划中，我们考虑到父节点的状态可以从子节点中转移，则我们的dp第一维度应该为节点的编号。而又由于本题限制，父子节点不能同时选择，我们可以再开一维度记录选择与否。则状态转移方程如下。</p>
+<p>u为父节点，v为子节点，0表示不选此节点，1表示选择此节点。</p>
+<p>如果我们不选父节点，那我们可以选子节点，也可以不选子节点。通过比较，将最大值记录。</p>
+<p>dp[u][0]+&#x3D;max(dp[v][0],dp[v][1])</p>
+<p>如果我们选父节点，那么我们只能选子节点不选的情况下的值。</p>
+<p>dp[u][1]+&#x3D;dp[v][0]</p>
+<h2 id="dfs部分"><a href="#dfs部分" class="headerlink" title="dfs部分"></a>dfs部分</h2><p>由上述状态转移方程可知，父节点必须由子节点的状态去更新，那么我们应该去寻找叶片。</p>
+<p>代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def dfs(u,fa):</span><br><span class="line">    for v in edge[u]:</span><br><span class="line">        dfs(v,u)</span><br><span class="line">        dp[u][0]+=max(dp[v][0],dp[v][1])</span><br><span class="line">        dp[u][1]+=dp[v][0]</span><br></pre></td></tr></table></figure>
+
+<p>通过不断递归找到叶片，再逐层回溯，更新状态。</p>
+<h2 id="输出答案"><a href="#输出答案" class="headerlink" title="输出答案"></a>输出答案</h2><p>由上述思路，我们不断更新状态直到根节点。那么我们只需要比较有无根节点的最大值即可。因为我们其他的节点的状态不断向上合并，直到根。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(max(dp[root][0],dp[root][1]))</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#由于题目要求，我们需要扩充递归层数。</span></span><br><span class="line">sys.setrecursionlimit(<span class="number">6000</span>)</span><br><span class="line"></span><br><span class="line">n=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">val=[<span class="number">0</span>]*(n+<span class="number">1</span>)</span><br><span class="line">edge=defaultdict(<span class="built_in">list</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    val[i]=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">dp=[[<span class="number">0</span>,val[i]]<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n+<span class="number">1</span>)]</span><br><span class="line">in_degree=[<span class="number">0</span>]*(n+<span class="number">1</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n-<span class="number">1</span>):</span><br><span class="line">    l,k=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">    edge[k].append(l)</span><br><span class="line">    in_degree[l]+=<span class="number">1</span></span><br><span class="line">root=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">if</span> in_degree[i]==<span class="number">0</span>:</span><br><span class="line">        root=i</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">u,fa</span>):</span><br><span class="line">    <span class="keyword">for</span> v <span class="keyword">in</span> edge[u]:</span><br><span class="line">        dfs(v,u)</span><br><span class="line">        dp[u][<span class="number">0</span>]+=<span class="built_in">max</span>(dp[v][<span class="number">0</span>],dp[v][<span class="number">1</span>])</span><br><span class="line">        dp[u][<span class="number">1</span>]+=dp[v][<span class="number">0</span>]</span><br><span class="line">dfs(root,<span class="number">0</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(dp[root][<span class="number">0</span>],dp[root][<span class="number">1</span>]))</span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -543,7 +536,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2024/07/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B47%E6%9C%8822%E6%97%A5-2024%E5%B9%B47%E6%9C%8828%E6%97%A5/">https://modetou.github.io/2024/07/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B47%E6%9C%8822%E6%97%A5-2024%E5%B9%B47%E6%9C%8828%E6%97%A5/</a>
+                    <a href="https://modetou.github.io/2024/08/08/python/%E6%A0%91%E5%BD%A2DP/">https://modetou.github.io/2024/08/08/python/%E6%A0%91%E5%BD%A2DP/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -752,7 +745,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/08/08/python/%E6%A0%91%E5%BD%A2DP/">
+                <a href="/2024/08/30/%E7%AC%AC%E4%B8%80%E8%8A%82%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
                     <div class="card-image">
                         
                         
@@ -769,7 +762,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-08-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-08-30
                         </span>
                         <span class="publish-author">
                             
@@ -789,7 +782,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/06/30/java/%E6%A0%87%E5%87%86%E7%9A%84JavaBean%E7%B1%BB/">
+                <a href="/2024/07/28/%E5%91%A8%E6%8A%A5/2024%E5%B9%B47%E6%9C%8822%E6%97%A5-2024%E5%B9%B47%E6%9C%8828%E6%97%A5/">
                     <div class="card-image">
                         
                         
@@ -806,7 +799,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-07-28
                             </span>
                         <span class="publish-author">
                             
