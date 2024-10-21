@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-10-13
+                    2024-10-21
                 </div>
                 
 
@@ -464,59 +464,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2024年10月7日-2024年10月13日"><a href="#2024年10月7日-2024年10月13日" class="headerlink" title="2024年10月7日-2024年10月13日"></a>2024年10月7日-2024年10月13日</h2><blockquote>
-<p>tag：星辰大海组学习周报</p>
-</blockquote>
-<h3 id="本周学习大纲"><a href="#本周学习大纲" class="headerlink" title="本周学习大纲"></a>本周学习大纲</h3><p>java项目拼图小游戏，yolov8，DCL</p>
-<h3 id="本周学习日历"><a href="#本周学习日历" class="headerlink" title="本周学习日历"></a>本周学习日历</h3><table>
-<thead>
-<tr>
-<th>日历</th>
-<th>学习内容</th>
-<th>其他</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>星期一</td>
-<td>java项目拼图小游戏</td>
-<td></td>
-</tr>
-<tr>
-<td>星期二</td>
-<td>java项目拼图小游戏</td>
-<td></td>
-</tr>
-<tr>
-<td>星期三</td>
-<td>java项目拼图小游戏</td>
-<td></td>
-</tr>
-<tr>
-<td>星期四</td>
-<td>DCL</td>
-<td></td>
-</tr>
-<tr>
-<td>星期五</td>
-<td>DCL</td>
-<td></td>
-</tr>
-<tr>
-<td>星期六</td>
-<td>yolov8</td>
-<td></td>
-</tr>
-<tr>
-<td>星期天</td>
-<td>yolov8</td>
-<td></td>
-</tr>
-</tbody></table>
-<h3 id="本周学习内容-及-收获"><a href="#本周学习内容-及-收获" class="headerlink" title="本周学习内容 及 收获"></a>本周学习内容 及 收获</h3><p>java项目拼图小游戏，yolov8，DCL</p>
-<h4 id="完成状态："><a href="#完成状态：" class="headerlink" title="完成状态："></a>完成状态：</h4><p>java项目拼图小游戏完成，yolov8，DCL,。</p>
-<h5 id="学习内容："><a href="#学习内容：" class="headerlink" title="学习内容："></a>学习内容：</h5><p>java项目拼图小游戏完成，yolov8，DCL,。</p>
-<h5 id="学习收获"><a href="#学习收获" class="headerlink" title="学习收获"></a>学习收获</h5><p>java项目拼图小游戏完成，yolov8，DCL,。</p>
-<h3 id="下周学习大纲"><a href="#下周学习大纲" class="headerlink" title="下周学习大纲"></a>下周学习大纲</h3><p>java的方法引用，异常。</p>
+                <h1 id="遗传算法——启发式算法（1）"><a href="#遗传算法——启发式算法（1）" class="headerlink" title="遗传算法——启发式算法（1）"></a>遗传算法——启发式算法（1）</h1><h3 id="一、基本原理"><a href="#一、基本原理" class="headerlink" title="一、基本原理"></a>一、基本原理</h3><p>遗传算法根据大自然中生物体进化规律而设计，模拟了达尔文生物进化论的自然选择和遗传学机理的生物进化过程。它通过将问题的求解过程转换成类似生物进化中的染色体基因的交叉、变异等过程，从而搜索出最优解。该算法的核心思想是将优化问题转化为一种“生存与淘汰”的过程，通过多代代传播和不断的优化，逐渐找到最优解。</p>
+<h3 id="二、核心要素"><a href="#二、核心要素" class="headerlink" title="二、核心要素"></a>二、核心要素</h3><p>遗传算法主要由以下五个核心要素组成：</p>
+<ol>
+<li><strong>参数编码</strong>：实现从表现型到基因型的映射，即编码工作。由于仿照基因编码的工作很复杂，通常进行简化，如二进制编码。</li>
+<li><strong>初始群体的设定</strong>：取一组随机个体构成初始种群，其中每个个体都表示了问题的一个潜在解法。</li>
+<li><strong>适应度函数的设计</strong>：评估个体的适应程度，并将其转换为一个数字分数，用于确定个体在下一代中的复制次数。</li>
+<li><strong>遗传操作设计</strong>：包括选择、交叉和变异等操作。选择操作根据个体的适应度大小进行择优选择；交叉操作将两个（或多个）个体的染色体段进行对称切割后互换，从而得到两个新个体；变异操作则是对某一个个体的染色体进行随机变换，随机生成一个新的个体。</li>
+<li><strong>控制参数设定</strong>：如种群大小、遗传代数、交叉概率、变异概率等。</li>
+</ol>
+<h3 id="三、算法步骤"><a href="#三、算法步骤" class="headerlink" title="三、算法步骤"></a>三、算法步骤</h3><p>遗传算法的一般步骤如下：</p>
+<ol>
+<li><strong>随机产生种群</strong>：初始化一组随机个体作为初始种群。</li>
+<li><strong>计算适应度</strong>：根据适应度函数对当前种群中每个个体进行评估。</li>
+<li><strong>选择和复制</strong>：根据个体的适应度大小进行选择和复制，适应度高的个体被选中的概率高，适应度低的个体被淘汰。</li>
+<li><strong>交叉</strong>：对选中的个体进行交叉操作，生成新的后代。</li>
+<li><strong>变异</strong>：对新生成的个体进行变异操作，以增加种群的多样性。</li>
+<li><strong>重复迭代</strong>：重复步骤2至5，直到种群达到一定的数量或达到收敛条件。</li>
+<li><strong>输出最优解</strong>：从种群中得到的最优解，即使得目标函数取得最优值的个体值。</li>
+</ol>
+<p>代码实例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">DNA_SIZE = <span class="number">24</span>  <span class="comment"># 编码长度</span></span><br><span class="line">POP_SIZE = <span class="number">100</span>  <span class="comment"># 种群大小</span></span><br><span class="line">CROSS_RATE = <span class="number">0.5</span>  <span class="comment"># 交叉率</span></span><br><span class="line">MUTA_RATE = <span class="number">0.15</span>  <span class="comment"># 变异率</span></span><br><span class="line">Iterations = <span class="number">50</span>  <span class="comment"># 迭代次数</span></span><br><span class="line">X_BOUND = [<span class="number">0</span>, <span class="number">10</span>]  <span class="comment"># X区间</span></span><br><span class="line">Y_BOUND = [<span class="number">0</span>, <span class="number">10</span>]  <span class="comment"># Y区间</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">F</span>(<span class="params">x, y</span>):  <span class="comment"># 函数</span></span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>*(x**<span class="number">2</span>)-y**<span class="number">2</span>+<span class="number">10</span>*x+<span class="number">4</span>*y+<span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">decodeDNA</span>(<span class="params">pop</span>):  <span class="comment"># 二进制转坐标，解码</span></span><br><span class="line">    x_pop = pop[:, :DNA_SIZE//<span class="number">2</span>]</span><br><span class="line">    y_pop = pop[:, DNA_SIZE//<span class="number">2</span>:]</span><br><span class="line">    <span class="comment"># .dot()用于矩阵相乘</span></span><br><span class="line">    <span class="comment">#2 ** np.arange(DNA_SIZE)[::-1]: 创建一个从2**0到2**(DNA_SIZE-1)的数组，</span></span><br><span class="line">    <span class="comment"># 通过[::-1]进行了反转，使得最低位的权重最小（即2**0），</span></span><br><span class="line">    <span class="comment"># 最高位的权重最大（即2**(DNA_SIZE-1)）。</span></span><br><span class="line">    <span class="comment"># 这个数组用于将二进制序列转换为十进制数。</span></span><br><span class="line">    <span class="comment">#x_pop.dot(...): 将x_pop与上面创建的权重数组进行点积运算。</span></span><br><span class="line">    <span class="comment"># 这个操作是对x_pop中的每一行（即每个个体的DNA序列）进行的，</span></span><br><span class="line">    <span class="comment"># 结果是将每个二进制序列转换为一个十进制数。</span></span><br><span class="line">    <span class="comment">#返回的x,y即整个种群全部的x，y，并非是单个变量，以列表形式返回</span></span><br><span class="line">    x = x_pop.dot(<span class="number">2</span> ** np.arange(DNA_SIZE)[::-<span class="number">1</span>]) / <span class="built_in">float</span>(<span class="number">2</span> ** DNA_SIZE - <span class="number">1</span>) * (X_BOUND[<span class="number">1</span>] - X_BOUND[<span class="number">0</span>]) + X_BOUND[<span class="number">0</span>]</span><br><span class="line">    y = y_pop.dot(<span class="number">2</span> ** np.arange(DNA_SIZE)[::-<span class="number">1</span>]) / <span class="built_in">float</span>(<span class="number">2</span> ** DNA_SIZE - <span class="number">1</span>) * (Y_BOUND[<span class="number">1</span>] - Y_BOUND[<span class="number">0</span>]) + Y_BOUND[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> x, y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">getfitness</span>(<span class="params">pop</span>):  <span class="comment"># 适应度函数</span></span><br><span class="line">    x, y = decodeDNA(pop)</span><br><span class="line">    temp = F(x, y)</span><br><span class="line">    <span class="keyword">return</span> (temp - np.<span class="built_in">min</span>(temp)) + <span class="number">0.0001</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">decodeDNA</span>(<span class="params">pop</span>):  <span class="comment"># 二进制转坐标，解码</span></span><br><span class="line">    x_pop = pop[:, <span class="number">1</span>::<span class="number">2</span>]</span><br><span class="line">    y_pop = pop[:, ::<span class="number">2</span>]</span><br><span class="line">    <span class="comment"># .dot()用于矩阵相乘</span></span><br><span class="line">    x = x_pop.dot(<span class="number">2</span> ** np.arange(DNA_SIZE)[::-<span class="number">1</span>]) / <span class="built_in">float</span>(<span class="number">2</span> ** DNA_SIZE - <span class="number">1</span>) * (X_BOUND[<span class="number">1</span>] - X_BOUND[<span class="number">0</span>]) + X_BOUND[<span class="number">0</span>]</span><br><span class="line">    y = y_pop.dot(<span class="number">2</span> ** np.arange(DNA_SIZE)[::-<span class="number">1</span>]) / <span class="built_in">float</span>(<span class="number">2</span> ** DNA_SIZE - <span class="number">1</span>) * (Y_BOUND[<span class="number">1</span>] - Y_BOUND[<span class="number">0</span>]) + Y_BOUND[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> x, y</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">select</span>(<span class="params">pop, fitness</span>):  <span class="comment"># 选择</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    np.random.choice(): 这是NumPy库中的一个函数，用于从给定的一维数组中随机选择元素。</span></span><br><span class="line"><span class="string">    np.arange(POP_SIZE): 生成一个从0到POP_SIZE-1的整数数组，其中POP_SIZE是种群的大小（即个体的数量）。这个数组代表了种群中个体的索引。</span></span><br><span class="line"><span class="string">    size=POP_SIZE: 指定要选择的元素数量，这里设置为种群的大小，意味着要生成一个新的种群。</span></span><br><span class="line"><span class="string">    replace=True: 允许选择的元素被重复选中，这意味着新的种群中可能有重复的个体。</span></span><br><span class="line"><span class="string">    p=fitness / (fitness.sum()): 指定每个元素被选中的概率。这里，适应度数组被归一化，使得所有概率之和为1。</span></span><br><span class="line"><span class="string">    适应度越高的个体被选中的概率越大。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    temp = np.random.choice(np.arange(POP_SIZE), size=POP_SIZE, replace=<span class="literal">True</span>, p=fitness / (fitness.<span class="built_in">sum</span>()))</span><br><span class="line">    <span class="keyword">return</span> pop[temp]</span><br><span class="line"></span><br><span class="line"><span class="comment"># mutation函数以及crossmuta函数均为编码过程</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">mutation</span>(<span class="params">temp, MUTA_RATE</span>):  <span class="comment"># 变异</span></span><br><span class="line">    <span class="keyword">if</span> np.random.rand() &lt; MUTA_RATE:</span><br><span class="line">        mutate_point = np.random.randint(<span class="number">0</span>, DNA_SIZE)</span><br><span class="line">        temp[mutate_point] = temp[mutate_point] ^ <span class="number">1</span>  <span class="comment"># ^为异或运算</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">crossmuta</span>(<span class="params">pop, CROSS_RATE</span>):  <span class="comment"># 交叉</span></span><br><span class="line">    new_pop = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> pop:</span><br><span class="line">        temp = i</span><br><span class="line">        <span class="keyword">if</span> np.random.rand() &lt; CROSS_RATE:</span><br><span class="line">            j = pop[np.random.randint(POP_SIZE)]</span><br><span class="line">            cpoints1 = np.random.randint(<span class="number">0</span>, DNA_SIZE * <span class="number">2</span> - <span class="number">1</span>)</span><br><span class="line">            cpoints2 = np.random.randint(cpoints1, DNA_SIZE * <span class="number">2</span>)</span><br><span class="line">            temp[cpoints1:cpoints2] = j[cpoints1:cpoints2]</span><br><span class="line">            mutation(temp, MUTA_RATE)</span><br><span class="line">        new_pop.append(temp)</span><br><span class="line">    <span class="keyword">return</span> new_pop</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_info</span>(<span class="params">pop</span>):  <span class="comment"># 输出最优解等</span></span><br><span class="line">    fitness = getfitness(pop)</span><br><span class="line">    maxfitness = np.argmax(fitness)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;max_fitness&quot;</span>, fitness[maxfitness])</span><br><span class="line">    x, y = decodeDNA(pop)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;最优的基因型:&quot;</span>, pop[maxfitness])</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;(x,y):&quot;</span>, (x[maxfitness], y[maxfitness]))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;F(x,y)_max=&quot;</span>, F(x[maxfitness], y[maxfitness]))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:  <span class="comment"># 主函数</span></span><br><span class="line">    pop = np.random.randint(<span class="number">2</span>, size=(POP_SIZE, DNA_SIZE * <span class="number">2</span>))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(Iterations):</span><br><span class="line">        x, y = decodeDNA(pop)</span><br><span class="line">        pop = np.array(crossmuta(pop, CROSS_RATE))</span><br><span class="line">        fitness = getfitness(pop)</span><br><span class="line">        pop = select(pop, fitness)</span><br><span class="line">    print_info(pop)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#运行结果</span></span><br><span class="line">max_fitness <span class="number">2.4304449751487067</span></span><br><span class="line">最优的基因型: [<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span></span><br><span class="line"> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">0</span>]</span><br><span class="line">(x,y): (np.float64(<span class="number">4.81861262432412</span>), np.float64(<span class="number">2.034722687883537</span>))</span><br><span class="line">F(x,y)_<span class="built_in">max</span>= <span class="number">48.96589295489156</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>运行结果如上所示，已经极其接近全局最优解。</p>
+<p>面对多变量复杂问题，难以求得精确解答时，遗传算法可以给出一个接近最优解的答案。</p>
+<h3 id="四、特点与优势"><a href="#四、特点与优势" class="headerlink" title="四、特点与优势"></a>四、特点与优势</h3><ol>
+<li><strong>直接对结构对象进行操作</strong>：遗传算法直接对个体进行编码，不存在求导和函数连续性的限定。</li>
+<li><strong>具有内在的隐并行性和更好的全局寻优能力</strong>：遗传算法通过种群中多个个体的同时进化，能够搜索到更多的解空间区域，从而更容易找到全局最优解。</li>
+<li><strong>采用概率化的寻优方法</strong>：遗传算法不需要确定的规则就能自动获取和指导优化的搜索空间，自适应地调整搜索方向。</li>
+<li><strong>广泛的适用性</strong>：遗传算法已被广泛地应用于组合优化、机器学习、信号处理、自适应控制和人工生命等领域。</li>
+</ol>
 
                 
             </div>
@@ -543,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://modetou.github.io/2024/10/13/%E5%91%A8%E6%8A%A5/2024%E5%B9%B410%E6%9C%887%E6%97%A5-2024%E5%B9%B410%E6%9C%8813%E6%97%A5/">https://modetou.github.io/2024/10/13/%E5%91%A8%E6%8A%A5/2024%E5%B9%B410%E6%9C%887%E6%97%A5-2024%E5%B9%B410%E6%9C%8813%E6%97%A5/</a>
+                    <a href="https://modetou.github.io/2024/10/21/python/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/">https://modetou.github.io/2024/10/21/python/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -748,9 +729,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2024/10/21/python/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/">
                     <div class="card-image">
@@ -768,9 +750,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -779,6 +761,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -789,7 +772,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/09/29/%E5%91%A8%E6%8A%A5/2024%E5%B9%B49%E6%9C%8823%E6%97%A5-2024%E5%B9%B49%E6%9C%8829%E6%97%A5/">
+                <a href="/2024/10/13/%E5%91%A8%E6%8A%A5/2024%E5%B9%B410%E6%9C%887%E6%97%A5-2024%E5%B9%B410%E6%9C%8813%E6%97%A5/">
                     <div class="card-image">
                         
                         
@@ -806,7 +789,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-13
                             </span>
                         <span class="publish-author">
                             
